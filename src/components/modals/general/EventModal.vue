@@ -1,11 +1,12 @@
 <template>
     <!--begin::Modal - Share & Earn-->
     <div
-        class="modal fade show"
+        class="modal fade"
+        :class="show ? 'show' : ''"
         id="kt_modal_share_earn"
         tabindex="-1"
         aria-hidden="true"
-        style="display: block"
+        :style="modalStyle"
     >
         <!--begin::Modal dialog-->
         <div class="modal-dialog modal-dialog-centered mw-800px">
@@ -17,6 +18,7 @@
                     <div
                         class="btn btn-sm btn-icon btn-active-color-primary"
                         data-bs-dismiss="modal"
+                        @click="onClick"
                     >
                         <span class="svg-icon svg-icon-1">
                             <inline-svg
@@ -80,39 +82,6 @@
                             <!--end::Title-->
                         </div>
                         <!--end::Input group-->
-
-                        <!--begin::Actions-->
-                        <div class="d-flex">
-                            <a href="#" class="btn btn-light-primary w-100">
-                                <img
-                                    alt="Logo"
-                                    src="media/svg/brand-logos/google-icon.svg"
-                                    class="h-15px me-3"
-                                />
-                                Import Contacts
-                            </a>
-
-                            <a
-                                href="#"
-                                class="btn btn-icon btn-facebook w-100 mx-6"
-                            >
-                                <img
-                                    alt="Logo"
-                                    src="media/svg/brand-logos/facebook-2.svg"
-                                    class="h-20px me-3"
-                                />
-                                Facebook
-                            </a>
-
-                            <a href="#" class="btn btn-icon btn-twitter w-100">
-                                <img
-                                    alt="Logo"
-                                    src="media/svg/brand-logos/twitter.svg"
-                                    class="h-20px me-3"
-                                />
-                                Twitter
-                            </a>
-                        </div>
                         <!--end::Actions-->
 
                         <!--begin::Input group-->
@@ -129,20 +98,6 @@
                                 >
                             </div>
                             <!--end::Label-->
-
-                            <!--begin::Switch-->
-                            <label
-                                class="form-check form-switch form-check-custom form-check-solid"
-                            >
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value="1"
-                                    checked="checked"
-                                />
-                                <span class="form-check-label"> Allowed </span>
-                            </label>
-                            <!--end::Switch-->
                         </div>
                         <!--end::Input group-->
                     </div>
@@ -158,47 +113,25 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted } from "vue";
-import ClipboardJS from "clipboard";
+import { defineComponent } from "vue";
 
 export default defineComponent({
-    name: "share-and-earn-modal",
+    name: "event-modal",
     components: {},
-    setup() {
-        const copyButtonRef = ref<null | HTMLElement>(null);
-        const inputRef = ref<null | HTMLElement>(null);
-
-        onMounted(() => {
-            const clipboard = new ClipboardJS(copyButtonRef.value as Element);
-
-            clipboard.on("success", function (e) {
-                const buttonCaption = copyButtonRef.value?.innerHTML;
-                //Add bgcolor
-                inputRef.value?.classList.add("bg-success");
-                inputRef.value?.classList.add("text-inverse-success");
-
-                if (copyButtonRef.value) {
-                    copyButtonRef.value.innerHTML = "Copied!";
-                }
-
-                setTimeout(function () {
-                    if (copyButtonRef.value && buttonCaption) {
-                        copyButtonRef.value.innerHTML = buttonCaption;
-                    }
-
-                    // Remove bgcolor
-                    inputRef.value?.classList.remove("bg-success");
-                    inputRef.value?.classList.remove("text-inverse-success");
-                }, 3000); // 3seconds
-
-                e.clearSelection();
-            });
-        });
-
-        return {
-            copyButtonRef,
-            inputRef,
-        };
+    props: {
+        show: { type: Boolean, default: false },
+    },
+    computed: {
+        modalStyle() {
+            return {
+                display: this.show ? "block" : "none",
+            };
+        },
+    },
+    methods: {
+        onClick: function (event) {
+            this.$emit("clicked", false);
+        },
     },
 });
 </script>

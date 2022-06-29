@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted } from "vue";
-import KTWidget5 from "@/layout/header/partials/activity-timeline/Item1_copie.vue";
+import KTWidget5 from "@/layout/header/partials/activity-timeline/incident-items.vue";
 import { setCurrentPageBreadcrumbs } from "@/core/helpers/breadcrumb";
 
 export default defineComponent({

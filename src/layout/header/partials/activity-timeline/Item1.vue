@@ -88,7 +88,58 @@
                     <!--end::Action-->
                 </div>
                 <!--end::Record-->
+                <div
+                    class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-5"
+                >
+                    <!--begin::Title-->
+                    <a
+                        href="#"
+                        class="fs-5 text-dark text-hover-primary fw-bold w-375px min-w-200px"
+                        >Anomalie d'authentification au service SSH</a
+                    >
+                    <!--end::Title-->
 
+                    <!--begin::Time-->
+                    <!--end::Time-->
+                    <!--begin::Label-->
+                    <div class="min-w-175px pe-2">
+                        <span class="badge badge-light text-muted"
+                            >Vulnérabilité web</span
+                        >
+                    </div>
+                    <!--end::Label-->
+
+                    <!--begin::Users-->
+                    <div
+                        class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2"
+                    >
+                        <!--begin::User-->
+                        <div class="symbol symbol-circle">
+                            <img
+                                src="media/avatars/login.png"
+                                alt="img"
+                                width="50px"
+                                height="50px"
+                            />
+                        </div>
+                        <!--end::User-->
+                    </div>
+                    <!--end::Users-->
+
+                    <!--begin::Progress-->
+                    <div class="min-w-125px pe-2">
+                        <span class="badge badge-light-success">Terminé</span>
+                    </div>
+                    <!--end::Progress-->
+
+                    <!--begin::Action-->
+                    <a
+                        href="#"
+                        class="btn btn-sm btn-light btn-active-light-primary"
+                        >Détails</a
+                    >
+                    <!--end::Action-->
+                </div>
                 <!--begin::Record-->
                 <div
                     class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-0"
