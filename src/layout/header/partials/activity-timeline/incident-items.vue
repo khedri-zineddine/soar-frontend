@@ -49,6 +49,16 @@
                         :img="item.img"
                         :onDetail="onShowDetail"
                     ></EventItem>
+                    <EventItem
+                        v-for="(item, idx) in eventData"
+                        :key="idx"
+                        :title="item.title"
+                        :status="item.status"
+                        :time="item.time"
+                        :typeVulnerability="item.typeVulnerability"
+                        :img="item.img"
+                        :onDetail="onShowDetail"
+                    ></EventItem>
                     <!--end::Record-->
                 </div>
                 <!--end::Timeline details-->
@@ -62,6 +72,8 @@
 import { defineComponent } from "vue";
 import EventItem from "./EventItem.vue";
 import EventModal from "@/components/modals/general/EventModal.vue";
+import { Actions } from "@/store/enums/EventEnums";
+import { mapState } from "vuex";
 
 const API_URL = import.meta.env.VITE_SOAR_API_URL;
 declare interface EventELem {
@@ -97,6 +109,19 @@ export default defineComponent({
             this.handleRansomwareAttack
         );
         this.sshEvtSource.addEventListener("message", this.handleSSHEvent);
+        this.$store.dispatch(Actions.GET_EVENTS);
+        this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
+        setInterval(() => {
+            this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
+        }, 60000);
+    },
+    computed: {
+        ...mapState({
+            eventData: (state) => state.EventModule?.eventData,
+            phishingEmails: (state) => {
+                this?.realTimeEvents.unshift(state.EventModule?.phishingEmails);
+            },
+        }),
     },
     methods: {
         onEventReceived(event) {

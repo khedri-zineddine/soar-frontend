@@ -2,6 +2,7 @@ import { createStore } from "vuex";
 import { config } from "vuex-module-decorators";
 
 import AuthModule from "@/store/modules/AuthModule";
+import EventModule from "@/store/modules/EventModule";
 import BodyModule from "@/store/modules/BodyModule";
 import BreadcrumbsModule from "@/store/modules/BreadcrumbsModule";
 import ConfigModule from "@/store/modules/ConfigModule";
@@ -14,6 +15,7 @@ const store = createStore({
         BodyModule,
         BreadcrumbsModule,
         ConfigModule,
+        EventModule,
     },
 });
 
