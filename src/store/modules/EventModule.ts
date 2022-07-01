@@ -1,8 +1,10 @@
 import { Actions, Mutations } from "@/store/enums/EventEnums";
 import { Module, Action, Mutation, VuexModule } from "vuex-module-decorators";
 import ApiService from "@/core/services/ApiService";
+import axios from "axios";
 const API_URL = import.meta.env.VITE_SOAR_API_URL;
 export interface EventInfo {
+    otherRequest: boolean;
     eventData: {
         title: string;
         status: string;
@@ -34,6 +36,7 @@ export default class EventModule extends VuexModule implements EventInfo {
         img: "email.png",
         details: {},
     };
+    otherRequest = false;
     get currentEvents() {
         return this.eventData;
     }
@@ -42,17 +45,28 @@ export default class EventModule extends VuexModule implements EventInfo {
     [Mutations.SET_EVENTS](data) {
         this.eventData = data?.data;
     }
+
+    @Mutation
     [Mutations.SET_ERROR](errors) {
         this.errors = errors;
     }
+
+    @Mutation
     [Mutations.SET_PHSHING_EMAILS](data) {
+        this.otherRequest = false;
         if (data["phishing"]) this.phishingEmails = data;
+    }
+
+    @Mutation
+    [Mutations.SET_SEND_RESPONSE](data) {
+        this.otherRequest = data;
     }
 
     @Action
     [Actions.GET_EVENTS]() {
         const params = {};
-        return ApiService.query(`${API_URL}/events/all`, params)
+        axios
+            .get(`${API_URL}/events/all`)
             .then(({ data }) => {
                 this.context.commit(Mutations.SET_EVENTS, data);
             })
@@ -62,7 +76,7 @@ export default class EventModule extends VuexModule implements EventInfo {
     }
     @Action
     [Actions.GET_PHSHING_EMAILS]() {
-        const params: any = {
+        const data: any = {
             username: "itachibatna@gmail.com",
             password: "",
             imap_server: "imap.gmail.com",
@@ -78,12 +92,15 @@ export default class EventModule extends VuexModule implements EventInfo {
             mark_as_read: false,
         };
         console.log("send event to email imap");
-        return ApiService.post(`${API_URL}/email/imap`, params)
+        return ApiService.post(`${API_URL}/email/imap`, data)
             .then(({ data }) => {
+                console.log("server response");
                 this.context.commit(Mutations.SET_PHSHING_EMAILS, data);
             })
             .catch(({ response }) => {
                 this.context.commit(Mutations.SET_ERROR, response.data.errors);
             });
+
+        return null;
     }
 }

@@ -26,6 +26,7 @@ class ApiService {
      * @description set the default HTTP request headers
      */
     public static setHeader(): void {
+        console.log("set header is called ");
         ApiService.vueInstance.axios.defaults.headers.common[
             "Authorization"
         ] = `Token ${JwtService.getToken()}`;
@@ -43,6 +44,7 @@ class ApiService {
         resource: string,
         params: AxiosRequestConfig
     ): Promise<AxiosResponse> {
+        console.log("query request is called");
         return ApiService.vueInstance.axios.get(resource, params);
     }
 
@@ -68,6 +70,14 @@ class ApiService {
     public static post(
         resource: string,
         params: AxiosRequestConfig
+    ): Promise<AxiosResponse> {
+        return ApiService.vueInstance.axios.post(`${resource}`, params);
+    }
+
+    public static myPost(
+        resource: string,
+        data?: any,
+        params?: AxiosRequestConfig
     ): Promise<AxiosResponse> {
         return ApiService.vueInstance.axios.post(`${resource}`, params);
     }

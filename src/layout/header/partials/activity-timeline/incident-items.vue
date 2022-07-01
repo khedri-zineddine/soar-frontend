@@ -9,19 +9,27 @@
                 <div class="pe-3 mb-5">
                     <!--begin::Title-->
                     <div class="fs-5 fw-bold mb-2">
-                        <div
-                            class="timeline-icon symbol symbol-circle symbol-40px me-4"
-                        >
-                            <div class="symbol-label bg-light">
-                                <span>
-                                    <inline-svg
-                                        src="media/icons/duotune/communication/com004.svg"
-                                    />
-                                </span>
+                        <div class="fs-5 fw-bold mb-2">
+                            <div
+                                class="timeline-icon symbol symbol-circle symbol-40px me-4"
+                            >
+                                <div class="symbol-label bg-light">
+                                    <span>
+                                        <inline-svg
+                                            src="media/icons/duotune/communication/com004.svg"
+                                        />
+                                    </span>
+                                </div>
                             </div>
+                            Il y a 4 nouvelles alertes de sécurité pour vous au
+                            sein de votre infrastructure :
                         </div>
-                        Il y a 4 nouvelles alertes de sécurité pour vous au sein
-                        de votre infrastructure :
+                        <a
+                            href="#"
+                            @click="checkPhishingEmails"
+                            class="btn btn-sm btn-light btn-active-light-primary"
+                            >Détails</a
+                        >
                     </div>
                     <!--end::Title-->
 
@@ -100,6 +108,7 @@ export default defineComponent({
                 `${API_URL}/ransomware/listen`
             ),
             sshEvtSource: new EventSource(`${API_URL}/ssh/listen`),
+            timer: null,
         };
     },
     mounted: function () {
@@ -110,10 +119,12 @@ export default defineComponent({
         );
         this.sshEvtSource.addEventListener("message", this.handleSSHEvent);
         this.$store.dispatch(Actions.GET_EVENTS);
-        this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
-        setInterval(() => {
-            this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
-        }, 60000);
+        //this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
+    },
+
+    beforeUnmount: function () {
+        console.log("i will destroy the component");
+        clearInterval(this.timer);
     },
     computed: {
         ...mapState({
@@ -124,7 +135,12 @@ export default defineComponent({
         }),
     },
     methods: {
+        checkPhishingEmails() {
+            this.$store.dispatch(Actions.GET_EVENTS);
+        },
         onEventReceived(event) {
+            console.log(event.data);
+            console.log("---------- i have received an login alert --------");
             const data = JSON.parse(event.data);
             //console.log(data, this.realTimeEvents);
             const obj = {
@@ -139,7 +155,7 @@ export default defineComponent({
         },
         handleSSHEvent(event) {
             const data = JSON.parse(event.data);
-            console.log(data);
+            //console.log(data);
             const obj = {
                 title: "Attaque de service SSH par force brute",
                 status: "En Cours",

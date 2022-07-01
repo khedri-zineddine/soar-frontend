@@ -94,11 +94,17 @@ export default defineComponent({
             return this.status === "Terminé" ? "success" : "primary";
         },
         isNewEvent() {
-            const today = new Date();
-            const tomorrow = new Date(today);
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            console.log(new Date(this.time).getTime() <= tomorrow.getTime());
-            return new Date(this.time).getTime() <= tomorrow.getTime();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() - 1);
+            /*console.log(
+                (new Date(this.time).getTime() - tomorrow.getTime()) /
+                    (3600000 * 24)
+            );*/
+            return (
+                (new Date(this.time).getTime() - tomorrow.getTime()) /
+                    (3600000 * 24) >=
+                0
+            );
         },
         onShowDetails: function (event) {
             if (this.onDetail) this.onDetail(event);
