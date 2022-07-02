@@ -64,9 +64,7 @@ export default class EventModule extends VuexModule implements EventInfo {
 
     @Action
     [Actions.GET_EVENTS]() {
-        const params = {};
-        axios
-            .get(`${API_URL}/events/all`)
+        return ApiService.query(`${API_URL}/events/all`, {})
             .then(({ data }) => {
                 this.context.commit(Mutations.SET_EVENTS, data);
             })

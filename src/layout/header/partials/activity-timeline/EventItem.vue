@@ -79,14 +79,7 @@ export default defineComponent({
     },
     setup() {
         onMounted(() => {
-            const evtSource = new EventSource(
-                "http://localhost:5000/anomalies/listen"
-            );
-            evtSource.addEventListener("message", function (event) {
-                console.log(event.data);
-                const time = JSON.parse(event.data);
-            });
-            console.log("component monted");
+            console.log("component mounted");
         });
     },
     methods: {

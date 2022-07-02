@@ -9,27 +9,19 @@
                 <div class="pe-3 mb-5">
                     <!--begin::Title-->
                     <div class="fs-5 fw-bold mb-2">
-                        <div class="fs-5 fw-bold mb-2">
-                            <div
-                                class="timeline-icon symbol symbol-circle symbol-40px me-4"
-                            >
-                                <div class="symbol-label bg-light">
-                                    <span>
-                                        <inline-svg
-                                            src="media/icons/duotune/communication/com004.svg"
-                                        />
-                                    </span>
-                                </div>
-                            </div>
-                            Il y a 4 nouvelles alertes de sécurité pour vous au
-                            sein de votre infrastructure :
-                        </div>
-                        <a
-                            href="#"
-                            @click="checkPhishingEmails"
-                            class="btn btn-sm btn-light btn-active-light-primary"
-                            >Détails</a
+                        <div
+                            class="timeline-icon symbol symbol-circle symbol-40px me-4"
                         >
+                            <div class="symbol-label bg-light">
+                                <span>
+                                    <inline-svg
+                                        src="media/icons/duotune/communication/com004.svg"
+                                    />
+                                </span>
+                            </div>
+                        </div>
+                        Il y a 4 nouvelles alertes de sécurité pour vous au sein
+                        de votre infrastructure :
                     </div>
                     <!--end::Title-->
 
@@ -103,41 +95,51 @@ export default defineComponent({
         return {
             showDetail: false as boolean,
             realTimeEvents: [] as EventELem[],
-            evtSource: new EventSource(`${API_URL}/anomalies/listen`),
-            ransomwareEvtSource: new EventSource(
-                `${API_URL}/ransomware/listen`
-            ),
-            sshEvtSource: new EventSource(`${API_URL}/ssh/listen`),
+            source: new EventSource(`${API_URL}/stream`),
             timer: null,
         };
     },
     mounted: function () {
-        this.evtSource.addEventListener("message", this.onEventReceived);
-        this.ransomwareEvtSource.addEventListener(
-            "message",
-            this.handleRansomwareAttack
+        this.source.addEventListener("anomalies", this.onEventReceived, false);
+        this.source.addEventListener(
+            "ransomware",
+            this.handleRansomwareAttack,
+            false
         );
-        this.sshEvtSource.addEventListener("message", this.handleSSHEvent);
+        this.source.addEventListener("ssh", this.handleSSHEvent, false);
         this.$store.dispatch(Actions.GET_EVENTS);
-        //this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
+        this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
+        this.timer = setInterval(() => {
+            this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
+        }, 300000);
     },
 
     beforeUnmount: function () {
-        console.log("i will destroy the component");
         clearInterval(this.timer);
+    },
+    watch: {
+        phishingEmails(newdata, olddata) {
+            if (newdata !== olddata) {
+                this?.realTimeEvents.unshift(newdata);
+            }
+        },
     },
     computed: {
         ...mapState({
-            eventData: (state) => state.EventModule?.eventData,
+            eventData: (state) => {
+                console.log("event data show ");
+                return state.EventModule?.eventData;
+            },
             phishingEmails: (state) => {
-                this?.realTimeEvents.unshift(state.EventModule?.phishingEmails);
+                console.log(
+                    "displaty state data",
+                    state.EventModule?.phishingEmails
+                );
+                return state.EventModule?.phishingEmails;
             },
         }),
     },
     methods: {
-        checkPhishingEmails() {
-            this.$store.dispatch(Actions.GET_EVENTS);
-        },
         onEventReceived(event) {
             console.log(event.data);
             console.log("---------- i have received an login alert --------");
