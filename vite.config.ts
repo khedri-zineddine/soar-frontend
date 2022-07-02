@@ -5,7 +5,7 @@ import * as path from "path";
 export default async ({ mode }) => {
     process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
     const port = Number(process.env.PORT) || 3000;
-    console.log(port);
+    const host = process.env.VITE_HOST_URL;
     return defineConfig({
         plugins: [vue()],
         resolve: {
@@ -22,6 +22,7 @@ export default async ({ mode }) => {
         },
         server: {
             port,
+            host,
         },
     });
 };
