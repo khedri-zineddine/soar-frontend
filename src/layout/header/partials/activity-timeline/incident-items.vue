@@ -75,7 +75,7 @@ import EventModal from "@/components/modals/general/EventModal.vue";
 import { Actions } from "@/store/enums/EventEnums";
 import { mapState } from "vuex";
 
-const API_URL = import.meta.env.VITE_SOAR_API_URL;
+const API_URL = APP_ENV.SOAR_API;
 declare interface EventELem {
     status: string;
     title: string;

@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "vite --mode dev",
+        "serve": "vite --mode prod",
         "build": "vue-tsc --noEmit && vite build",
         "preview": "vite preview",
         "lint": "vue-cli-service lint"
