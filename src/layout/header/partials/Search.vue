@@ -21,7 +21,7 @@
                     >
                         <span class="svg-icon svg-icon-1">
                             <inline-svg
-                                src="media/icons/duotune/general/gen021.svg"
+                                src="/media/icons/duotune/general/gen021.svg"
                             />
                         </span>
                     </div>
@@ -49,7 +49,7 @@
                             class="svg-icon svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 translate-middle-y ms-0"
                         >
                             <inline-svg
-                                src="media/icons/duotune/general/gen021.svg"
+                                src="/media/icons/duotune/general/gen021.svg"
                             />
                         </span>
                         <!--end::Icon-->
@@ -87,7 +87,7 @@
                                 class="svg-icon svg-icon-2 svg-icon-lg-1 me-0"
                             >
                                 <inline-svg
-                                    src="media/icons/duotune/arrows/arr061.svg"
+                                    src="/media/icons/duotune/arrows/arr061.svg"
                                 />
                             </span>
                         </span>
@@ -107,7 +107,7 @@
                             >
                                 <span class="svg-icon svg-icon-1">
                                     <inline-svg
-                                        src="media/icons/duotune/coding/cod001.svg"
+                                        src="/media/icons/duotune/coding/cod001.svg"
                                     />
                                 </span>
                             </div>
@@ -123,7 +123,7 @@
                             >
                                 <span class="svg-icon svg-icon-2">
                                     <inline-svg
-                                        src="media/icons/duotune/arrows/arr072.svg"
+                                        src="/media/icons/duotune/arrows/arr072.svg"
                                     />
                                 </span>
                             </div>

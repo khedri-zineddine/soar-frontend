@@ -36,18 +36,18 @@
                                     class="svg-icon toggle-on svg-icon-primary svg-icon-2"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/general/gen036.svg"
+                                        src="/media/icons/duotune/general/gen036.svg"
                                     />
                                 </span>
                                 <span class="svg-icon toggle-off svg-icon-2">
                                     <inline-svg
-                                        src="media/icons/duotune/general/gen035.svg"
+                                        src="/media/icons/duotune/general/gen035.svg"
                                     />
                                 </span>
                             </div>
 
                             <img
-                                src="media/svg/card-logos/mastercard.svg"
+                                src="/media/svg/card-logos/mastercard.svg"
                                 class="w-40px me-3"
                                 alt=""
                             />
@@ -199,7 +199,7 @@
                                                     class="symbol symbol-20px symbol-circle ms-2"
                                                 >
                                                     <img
-                                                        src="media/flags/australia.svg"
+                                                        src="/media/flags/australia.svg"
                                                     />
                                                 </div>
                                             </td>
@@ -216,7 +216,7 @@
                                                     class="svg-icon svg-icon-2 svg-icon-success"
                                                 >
                                                     <inline-svg
-                                                        src="media/icons/duotune/general/gen043.svg"
+                                                        src="/media/icons/duotune/general/gen043.svg"
                                                     />
                                                 </span>
                                             </td>
@@ -244,19 +244,19 @@
                                     class="svg-icon toggle-on svg-icon-primary svg-icon-2"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/general/gen036.svg"
+                                        src="/media/icons/duotune/general/gen036.svg"
                                     />
                                 </span>
 
                                 <span class="svg-icon toggle-off svg-icon-2">
                                     <inline-svg
-                                        src="media/icons/duotune/general/gen035.svg"
+                                        src="/media/icons/duotune/general/gen035.svg"
                                     />
                                 </span>
                             </div>
 
                             <img
-                                src="media/svg/card-logos/visa.svg"
+                                src="/media/svg/card-logos/visa.svg"
                                 class="w-40px me-3"
                                 alt=""
                             />
@@ -403,7 +403,7 @@
                                                     class="symbol symbol-20px symbol-circle ms-2"
                                                 >
                                                     <img
-                                                        src="media/flags/united-kingdom.svg"
+                                                        src="/media/flags/united-kingdom.svg"
                                                     />
                                                 </div>
                                             </td>
@@ -421,7 +421,7 @@
                                                     class="svg-icon svg-icon-2 svg-icon-success"
                                                 >
                                                     <inline-svg
-                                                        src="media/icons/duotune/arrows/arr012.svg"
+                                                        src="/media/icons/duotune/arrows/arr012.svg"
                                                     />
                                                 </span>
                                             </td>
@@ -449,19 +449,19 @@
                                     class="svg-icon toggle-on svg-icon-primary svg-icon-2"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/general/gen036.svg"
+                                        src="/media/icons/duotune/general/gen036.svg"
                                     />
                                 </span>
 
                                 <span class="svg-icon toggle-off svg-icon-2">
                                     <inline-svg
-                                        src="media/icons/duotune/general/gen035.svg"
+                                        src="/media/icons/duotune/general/gen035.svg"
                                     />
                                 </span>
                             </div>
 
                             <img
-                                src="media/svg/card-logos/american-express.svg"
+                                src="/media/svg/card-logos/american-express.svg"
                                 class="w-40px me-3"
                                 alt=""
                             />
@@ -611,7 +611,7 @@
                                                     class="symbol symbol-20px symbol-circle ms-2"
                                                 >
                                                     <img
-                                                        src="media/flags/united-states.svg"
+                                                        src="/media/flags/united-states.svg"
                                                     />
                                                 </div>
                                             </td>
@@ -629,7 +629,7 @@
                                                     class="svg-icon svg-icon-2 svg-icon-danger"
                                                 >
                                                     <inline-svg
-                                                        src="media/icons/duotune/arrows/arr061.svg"
+                                                        src="/media/icons/duotune/arrows/arr061.svg"
                                                     />
                                                 </span>
                                             </td>

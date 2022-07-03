@@ -8,7 +8,7 @@
             <router-link to="/dashboard" class="mb-10 pt-lg-10">
                 <img
                     alt="Logo"
-                    src="media/logos/logo-1.svg"
+                    src="/media/logos/logo-1.svg"
                     class="h-40px mb-5"
                 />
             </router-link>

@@ -17,7 +17,7 @@
                 >
                     <span class="svg-icon svg-icon-1">
                         <inline-svg
-                            src="media/icons/duotune/general/gen007.svg"
+                            src="/media/icons/duotune/general/gen007.svg"
                         />
                     </span>
                 </div>
@@ -34,7 +34,7 @@
                 >
                     <span class="svg-icon svg-icon-1">
                         <inline-svg
-                            src="media/icons/duotune/communication/com003.svg"
+                            src="/media/icons/duotune/communication/com003.svg"
                         />
                     </span>
 
@@ -52,7 +52,7 @@
                 id="kt_sidebar_toggler"
             >
                 <span class="svg-icon svg-icon-2x">
-                    <inline-svg src="media/icons/duotune/coding/cod001.svg" />
+                    <inline-svg src="/media/icons/duotune/coding/cod001.svg" />
                 </span>
             </button>
         </div>

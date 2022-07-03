@@ -11,7 +11,7 @@
                     <div class="d-flex flex-center flex-column mb-5">
                         <!--begin::Avatar-->
                         <div class="symbol symbol-100px symbol-circle mb-7">
-                            <img src="media/avatars/300-1.jpg" alt="image" />
+                            <img src="/media/avatars/300-1.jpg" alt="image" />
                         </div>
                         <!--end::Avatar-->
 
@@ -42,7 +42,7 @@
                                         class="svg-icon svg-icon-3 svg-icon-success"
                                     >
                                         <inline-svg
-                                            src="media/icons/duotune/arrows/arr066.svg"
+                                            src="/media/icons/duotune/arrows/arr066.svg"
                                         />
                                     </span>
                                 </div>
@@ -60,7 +60,7 @@
                                         class="svg-icon svg-icon-3 svg-icon-danger"
                                     >
                                         <inline-svg
-                                            src="media/icons/duotune/arrows/arr065.svg"
+                                            src="/media/icons/duotune/arrows/arr065.svg"
                                         />
                                     </span>
                                 </div>
@@ -78,7 +78,7 @@
                                         class="svg-icon svg-icon-3 svg-icon-success"
                                     >
                                         <inline-svg
-                                            src="media/icons/duotune/arrows/arr066.svg"
+                                            src="/media/icons/duotune/arrows/arr066.svg"
                                         />
                                     </span>
                                 </div>
@@ -104,7 +104,7 @@
                             <span class="ms-2 rotate-180">
                                 <span class="svg-icon svg-icon-3">
                                     <inline-svg
-                                        src="media/icons/duotune/arrows/arr072.svg"
+                                        src="/media/icons/duotune/arrows/arr072.svg"
                                     />
                                 </span>
                             </span>
@@ -197,7 +197,7 @@
                             class="svg-icon svg-icon-2tx svg-icon-primary me-4"
                         >
                             <inline-svg
-                                src="media/icons/duotune/art/art006.svg"
+                                src="/media/icons/duotune/art/art006.svg"
                             />
                         </span>
                         <!--begin::Wrapper-->
@@ -222,7 +222,7 @@
                         <div class="d-flex flex-stack">
                             <div class="d-flex">
                                 <img
-                                    src="media/svg/brand-logos/google-icon.svg"
+                                    src="/media/svg/brand-logos/google-icon.svg"
                                     class="w-30px me-6"
                                     alt=""
                                 />
@@ -273,7 +273,7 @@
                         <div class="d-flex flex-stack">
                             <div class="d-flex">
                                 <img
-                                    src="media/svg/brand-logos/github.svg"
+                                    src="/media/svg/brand-logos/github.svg"
                                     class="w-30px me-6"
                                     alt=""
                                 />
@@ -324,7 +324,7 @@
                         <div class="d-flex flex-stack">
                             <div class="d-flex">
                                 <img
-                                    src="media/svg/brand-logos/slack-icon.svg"
+                                    src="/media/svg/brand-logos/slack-icon.svg"
                                     class="w-30px me-6"
                                     alt=""
                                 />
@@ -438,7 +438,7 @@
                         Actions
                         <span class="svg-icon svg-icon-2 me-0">
                             <inline-svg
-                                src="media/icons/duotune/arrows/arr072.svg"
+                                src="/media/icons/duotune/arrows/arr072.svg"
                             />
                         </span>
                     </a>

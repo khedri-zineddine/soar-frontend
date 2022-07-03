@@ -23,7 +23,7 @@
                 >
                     <span class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>
@@ -101,7 +101,7 @@
                                     >
                                         <span class="svg-icon svg-icon-2">
                                             <inline-svg
-                                                src="media/icons/duotune/arrows/arr064.svg"
+                                                src="/media/icons/duotune/arrows/arr064.svg"
                                             />
                                         </span>
                                     </a>
@@ -135,7 +135,7 @@ export default defineComponent({
     setup() {
         const items = [
             {
-                image: "media/svg/brand-logos/plurk.svg",
+                image: "/media/svg/brand-logos/plurk.svg",
                 info: {
                     title: "Top Authors",
                     description: "Successful Fellas",
@@ -148,7 +148,7 @@ export default defineComponent({
             },
 
             {
-                image: "media/svg/brand-logos/telegram.svg",
+                image: "/media/svg/brand-logos/telegram.svg",
                 info: {
                     title: "Popular Authors",
                     description: "Most Successful",
@@ -161,7 +161,7 @@ export default defineComponent({
             },
 
             {
-                image: "media/svg/brand-logos/vimeo.svg",
+                image: "/media/svg/brand-logos/vimeo.svg",
                 info: {
                     title: "New Users",
                     description: "Awesome Users",
@@ -174,7 +174,7 @@ export default defineComponent({
             },
 
             {
-                image: "media/svg/brand-logos/bebo.svg",
+                image: "/media/svg/brand-logos/bebo.svg",
                 info: {
                     title: "Active Customers",
                     description: "Best Customers",
@@ -187,7 +187,7 @@ export default defineComponent({
             },
 
             {
-                image: "media/svg/brand-logos/kickstarter.svg",
+                image: "/media/svg/brand-logos/kickstarter.svg",
                 info: {
                     title: "Bestseller Theme",
                     description: "Amazing Templates",

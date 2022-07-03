@@ -183,7 +183,7 @@
                                     >
                                         <span class="svg-icon svg-icon-3">
                                             <inline-svg
-                                                src="media/icons/duotune/general/gen019.svg"
+                                                src="/media/icons/duotune/general/gen019.svg"
                                             />
                                         </span>
                                     </a>
@@ -215,7 +215,7 @@
                                     >
                                         <span class="svg-icon svg-icon-3">
                                             <inline-svg
-                                                src="media/icons/duotune/general/gen019.svg"
+                                                src="/media/icons/duotune/general/gen019.svg"
                                             />
                                         </span>
                                     </a>

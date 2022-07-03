@@ -43,7 +43,7 @@
                     >
                         <span class="svg-icon svg-icon-3x me-5">
                             <inline-svg
-                                src="media/icons/duotune/communication/com005.svg"
+                                src="/media/icons/duotune/communication/com005.svg"
                             />
                         </span>
 
@@ -79,7 +79,7 @@
                     >
                         <span class="svg-icon svg-icon-3x me-5">
                             <inline-svg
-                                src="media/icons/duotune/finance/fin006.svg"
+                                src="/media/icons/duotune/finance/fin006.svg"
                             />
                         </span>
 

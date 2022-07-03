@@ -16,7 +16,7 @@
                             class="svg-icon svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 ms-5 translate-middle-y"
                         >
                             <inline-svg
-                                src="media/icons/duotune/general/gen021.svg"
+                                src="/media/icons/duotune/general/gen021.svg"
                             />
                         </span>
                         <!--end::Icon-->
@@ -129,13 +129,13 @@
                                 <div class="symbol symbol-35px symbol-circle">
                                     <img
                                         alt="Pic"
-                                        src="media/avatars/300-5.jpg"
+                                        src="/media/avatars/300-5.jpg"
                                     />
                                 </div>
                                 <div class="symbol symbol-35px symbol-circle">
                                     <img
                                         alt="Pic"
-                                        src="media/avatars/300-25.jpg"
+                                        src="/media/avatars/300-25.jpg"
                                     />
                                 </div>
                                 <div class="symbol symbol-35px symbol-circle">
@@ -147,7 +147,7 @@
                                 <div class="symbol symbol-35px symbol-circle">
                                     <img
                                         alt="Pic"
-                                        src="media/avatars/300-9.jpg"
+                                        src="/media/avatars/300-9.jpg"
                                     />
                                 </div>
                                 <div class="symbol symbol-35px symbol-circle">
@@ -165,7 +165,7 @@
                                 <div class="symbol symbol-35px symbol-circle">
                                     <img
                                         alt="Pic"
-                                        src="media/avatars/300-23.jpg"
+                                        src="/media/avatars/300-23.jpg"
                                     />
                                 </div>
                                 <a
@@ -359,46 +359,46 @@ export default defineComponent({
             {
                 type: "in",
                 name: "Brian Cox",
-                image: "media/avatars/300-25.jpg",
+                image: "/media/avatars/300-25.jpg",
                 time: "5 Hours",
                 text: "How likely are you to recommend our company to your friends and family ?",
             },
             {
                 type: "out",
-                image: "media/avatars/300-1.jpg",
+                image: "/media/avatars/300-1.jpg",
                 time: "2 Hours",
                 text: "Hey there, we’re just writing to let you know that you’ve been subscribed to a repository on GitHub.",
             },
             {
                 type: "in",
                 name: "Brian Cox",
-                image: "media/avatars/300-25.jpg",
+                image: "/media/avatars/300-25.jpg",
                 time: "2 Hour",
                 text: "Ok, Understood!",
             },
             {
                 type: "out",
-                image: "media/avatars/300-1.jpg",
+                image: "/media/avatars/300-1.jpg",
                 time: "2 Hours",
                 text: "You’ll receive notifications for all issues, pull requests!",
             },
             {
                 type: "in",
                 name: "Brian Cox",
-                image: "media/avatars/300-25.jpg",
+                image: "/media/avatars/300-25.jpg",
                 time: "1 Hour",
                 text: "You can unwatch this repository immediately by clicking here: Keenthemes.com",
             },
             {
                 type: "out",
-                image: "media/avatars/300-1.jpg",
+                image: "/media/avatars/300-1.jpg",
                 time: "4 mins",
                 text: "Most purchased Business courses during this sale!",
             },
             {
                 type: "in",
                 name: "Brian Cox",
-                image: "media/avatars/300-25.jpg",
+                image: "/media/avatars/300-25.jpg",
                 time: "2 mins",
                 text: "Company BBQ to celebrate the last quater achievements and goals. Food and drinks provided",
             },
@@ -412,7 +412,7 @@ export default defineComponent({
             }
             messages.value.push({
                 type: "out",
-                image: "media/avatars/300-1.jpg",
+                image: "/media/avatars/300-1.jpg",
                 time: "Just now",
                 text: newMessageText.value,
             });
@@ -429,7 +429,7 @@ export default defineComponent({
                 messages.value.push({
                     type: "in",
                     name: "Ja Morant",
-                    image: "media/avatars/300-25.jpg",
+                    image: "/media/avatars/300-25.jpg",
                     time: "Just now",
                     text: "Thank you for your awesome support!",
                 });

@@ -34,7 +34,7 @@
                 >
                     <span class="svg-icon svg-icon-3 svg-icon-primary">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>
@@ -61,7 +61,7 @@
                     class="svg-icon svg-icon-3 me-1"
                 >
                     <inline-svg
-                        :src="`media/icons/duotune/Navigation/${arrow}.svg`"
+                        :src="`/media/icons/duotune/Navigation/${arrow}.svg`"
                     />
                 </span>
 

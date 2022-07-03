@@ -27,7 +27,7 @@
                             <div class="symbol-label bg-white bg-opacity-50">
                                 <span class="svg-icon svg-icon-1 svg-icon-dark">
                                     <inline-svg
-                                        src="media/icons/duotune/abstract/abs043.svg"
+                                        src="/media/icons/duotune/abstract/abs043.svg"
                                     />
                                 </span>
                             </div>
@@ -54,7 +54,7 @@
                             <div class="symbol-label bg-white bg-opacity-50">
                                 <span class="svg-icon svg-icon-1 svg-icon-dark">
                                     <inline-svg
-                                        src="media/icons/duotune/abstract/abs046.svg"
+                                        src="/media/icons/duotune/abstract/abs046.svg"
                                     />
                                 </span>
                             </div>
@@ -81,7 +81,7 @@
                             <div class="symbol-label bg-white bg-opacity-50">
                                 <span class="svg-icon svg-icon-1 svg-icon-dark">
                                     <inline-svg
-                                        src="media/icons/duotune/abstract/abs022.svg"
+                                        src="/media/icons/duotune/abstract/abs022.svg"
                                     />
                                 </span>
                             </div>
@@ -108,7 +108,7 @@
                             <div class="symbol-label bg-white bg-opacity-50">
                                 <span class="svg-icon svg-icon-1 svg-icon-dark">
                                     <inline-svg
-                                        src="media/icons/duotune/abstract/abs045.svg"
+                                        src="/media/icons/duotune/abstract/abs045.svg"
                                     />
                                 </span>
                             </div>

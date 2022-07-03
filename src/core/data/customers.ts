@@ -18,7 +18,7 @@ const customers: Array<ICustomer> = [
         email: "e.smith@kpmg.com.au",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -31,7 +31,7 @@ const customers: Array<ICustomer> = [
         email: "melody@altbox.com",
         company: "Google",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -44,7 +44,7 @@ const customers: Array<ICustomer> = [
         email: "max@kt.com",
         company: "Bistro Union",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -57,7 +57,7 @@ const customers: Array<ICustomer> = [
         email: "sean@dellito.com",
         company: "Astro Limited",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -70,7 +70,7 @@ const customers: Array<ICustomer> = [
         email: "brian@exchange.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -83,7 +83,7 @@ const customers: Array<ICustomer> = [
         email: "mikaela@pexcom.com",
         company: "Keenthemes",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -96,7 +96,7 @@ const customers: Array<ICustomer> = [
         email: "f.mitcham@kpmg.com.au",
         company: "Paypal",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -109,7 +109,7 @@ const customers: Array<ICustomer> = [
         email: "olivia@corpmail.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -122,7 +122,7 @@ const customers: Array<ICustomer> = [
         email: "owen.neil@gmail.com",
         company: "Paramount",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -135,7 +135,7 @@ const customers: Array<ICustomer> = [
         email: "dam@consilting.com",
         company: "Trinity Studio",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -148,7 +148,7 @@ const customers: Array<ICustomer> = [
         email: "emma@intenso.com",
         company: "B&T Legal Services",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -161,7 +161,7 @@ const customers: Array<ICustomer> = [
         email: "ana.cf@limtel.com",
         company: "Paysafe Security",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -174,7 +174,7 @@ const customers: Array<ICustomer> = [
         email: "e.smith@kpmg.com.au",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -187,7 +187,7 @@ const customers: Array<ICustomer> = [
         email: "melody@altbox.com",
         company: "Google",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -200,7 +200,7 @@ const customers: Array<ICustomer> = [
         email: "max@kt.com",
         company: "Bistro Union",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -213,7 +213,7 @@ const customers: Array<ICustomer> = [
         email: "sean@dellito.com",
         company: "Astro Limited",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -226,7 +226,7 @@ const customers: Array<ICustomer> = [
         email: "brian@exchange.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -239,7 +239,7 @@ const customers: Array<ICustomer> = [
         email: "mikaela@pexcom.com",
         company: "Keenthemes",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -252,7 +252,7 @@ const customers: Array<ICustomer> = [
         email: "f.mitcham@kpmg.com.au",
         company: "Paypal",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -265,7 +265,7 @@ const customers: Array<ICustomer> = [
         email: "olivia@corpmail.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -278,7 +278,7 @@ const customers: Array<ICustomer> = [
         email: "owen.neil@gmail.com",
         company: "Paramount",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -291,7 +291,7 @@ const customers: Array<ICustomer> = [
         email: "dam@consilting.com",
         company: "Trinity Studio",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -304,7 +304,7 @@ const customers: Array<ICustomer> = [
         email: "emma@intenso.com",
         company: "B&T Legal Services",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -317,7 +317,7 @@ const customers: Array<ICustomer> = [
         email: "ana.cf@limtel.com",
         company: "Paysafe Security",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -330,7 +330,7 @@ const customers: Array<ICustomer> = [
         email: "e.smith@kpmg.com.au",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -343,7 +343,7 @@ const customers: Array<ICustomer> = [
         email: "melody@altbox.com",
         company: "Google",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -356,7 +356,7 @@ const customers: Array<ICustomer> = [
         email: "max@kt.com",
         company: "Bistro Union",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -369,7 +369,7 @@ const customers: Array<ICustomer> = [
         email: "sean@dellito.com",
         company: "Astro Limited",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -382,7 +382,7 @@ const customers: Array<ICustomer> = [
         email: "brian@exchange.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -395,7 +395,7 @@ const customers: Array<ICustomer> = [
         email: "mikaela@pexcom.com",
         company: "Keenthemes",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -408,7 +408,7 @@ const customers: Array<ICustomer> = [
         email: "f.mitcham@kpmg.com.au",
         company: "Paypal",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -421,7 +421,7 @@ const customers: Array<ICustomer> = [
         email: "olivia@corpmail.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -434,7 +434,7 @@ const customers: Array<ICustomer> = [
         email: "owen.neil@gmail.com",
         company: "Paramount",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -447,7 +447,7 @@ const customers: Array<ICustomer> = [
         email: "dam@consilting.com",
         company: "Trinity Studio",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -460,7 +460,7 @@ const customers: Array<ICustomer> = [
         email: "emma@intenso.com",
         company: "B&T Legal Services",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -473,7 +473,7 @@ const customers: Array<ICustomer> = [
         email: "ana.cf@limtel.com",
         company: "Paysafe Security",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -486,7 +486,7 @@ const customers: Array<ICustomer> = [
         email: "e.smith@kpmg.com.au",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -499,7 +499,7 @@ const customers: Array<ICustomer> = [
         email: "melody@altbox.com",
         company: "Google",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -512,7 +512,7 @@ const customers: Array<ICustomer> = [
         email: "max@kt.com",
         company: "Bistro Union",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -525,7 +525,7 @@ const customers: Array<ICustomer> = [
         email: "sean@dellito.com",
         company: "Astro Limited",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -538,7 +538,7 @@ const customers: Array<ICustomer> = [
         email: "brian@exchange.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -551,7 +551,7 @@ const customers: Array<ICustomer> = [
         email: "mikaela@pexcom.com",
         company: "Keenthemes",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -564,7 +564,7 @@ const customers: Array<ICustomer> = [
         email: "f.mitcham@kpmg.com.au",
         company: "Paypal",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -577,7 +577,7 @@ const customers: Array<ICustomer> = [
         email: "olivia@corpmail.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -590,7 +590,7 @@ const customers: Array<ICustomer> = [
         email: "owen.neil@gmail.com",
         company: "Paramount",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -603,7 +603,7 @@ const customers: Array<ICustomer> = [
         email: "dam@consilting.com",
         company: "Trinity Studio",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -616,7 +616,7 @@ const customers: Array<ICustomer> = [
         email: "emma@intenso.com",
         company: "B&T Legal Services",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -629,7 +629,7 @@ const customers: Array<ICustomer> = [
         email: "ana.cf@limtel.com",
         company: "Paysafe Security",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -642,7 +642,7 @@ const customers: Array<ICustomer> = [
         email: "e.smith@kpmg.com.au",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -655,7 +655,7 @@ const customers: Array<ICustomer> = [
         email: "melody@altbox.com",
         company: "Google",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -668,7 +668,7 @@ const customers: Array<ICustomer> = [
         email: "max@kt.com",
         company: "Bistro Union",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -681,7 +681,7 @@ const customers: Array<ICustomer> = [
         email: "sean@dellito.com",
         company: "Astro Limited",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -694,7 +694,7 @@ const customers: Array<ICustomer> = [
         email: "brian@exchange.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -707,7 +707,7 @@ const customers: Array<ICustomer> = [
         email: "mikaela@pexcom.com",
         company: "Keenthemes",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -720,7 +720,7 @@ const customers: Array<ICustomer> = [
         email: "f.mitcham@kpmg.com.au",
         company: "Paypal",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -733,7 +733,7 @@ const customers: Array<ICustomer> = [
         email: "olivia@corpmail.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -746,7 +746,7 @@ const customers: Array<ICustomer> = [
         email: "owen.neil@gmail.com",
         company: "Paramount",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -759,7 +759,7 @@ const customers: Array<ICustomer> = [
         email: "dam@consilting.com",
         company: "Trinity Studio",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -772,7 +772,7 @@ const customers: Array<ICustomer> = [
         email: "emma@intenso.com",
         company: "B&T Legal Services",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -785,7 +785,7 @@ const customers: Array<ICustomer> = [
         email: "ana.cf@limtel.com",
         company: "Paysafe Security",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -798,7 +798,7 @@ const customers: Array<ICustomer> = [
         email: "e.smith@kpmg.com.au",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -811,7 +811,7 @@ const customers: Array<ICustomer> = [
         email: "melody@altbox.com",
         company: "Google",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -824,7 +824,7 @@ const customers: Array<ICustomer> = [
         email: "max@kt.com",
         company: "Bistro Union",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -837,7 +837,7 @@ const customers: Array<ICustomer> = [
         email: "sean@dellito.com",
         company: "Astro Limited",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -850,7 +850,7 @@ const customers: Array<ICustomer> = [
         email: "brian@exchange.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -863,7 +863,7 @@ const customers: Array<ICustomer> = [
         email: "mikaela@pexcom.com",
         company: "Keenthemes",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -876,7 +876,7 @@ const customers: Array<ICustomer> = [
         email: "f.mitcham@kpmg.com.au",
         company: "Paypal",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -889,7 +889,7 @@ const customers: Array<ICustomer> = [
         email: "olivia@corpmail.com",
         company: "-",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",
@@ -902,7 +902,7 @@ const customers: Array<ICustomer> = [
         email: "owen.neil@gmail.com",
         company: "Paramount",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -915,7 +915,7 @@ const customers: Array<ICustomer> = [
         email: "dam@consilting.com",
         company: "Trinity Studio",
         payment: {
-            icon: "media/svg/card-logos/visa.svg",
+            icon: "/media/svg/card-logos/visa.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "visa",
@@ -928,7 +928,7 @@ const customers: Array<ICustomer> = [
         email: "emma@intenso.com",
         company: "B&T Legal Services",
         payment: {
-            icon: "media/svg/card-logos/mastercard.svg",
+            icon: "/media/svg/card-logos/mastercard.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "mastercard",
@@ -941,7 +941,7 @@ const customers: Array<ICustomer> = [
         email: "ana.cf@limtel.com",
         company: "Paysafe Security",
         payment: {
-            icon: "media/svg/card-logos/american-express.svg",
+            icon: "/media/svg/card-logos/american-express.svg",
             ccnumber:
                 "**** " + Math.floor(Math.random() * (9999 - 1000 + 1) + 1000),
             label: "american_express",

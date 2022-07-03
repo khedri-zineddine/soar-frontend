@@ -37,7 +37,7 @@
         >
             <!--begin::User-->
             <div class="symbol symbol-circle symbol-40px">
-                <img :src="'media/avatars/' + img" alt="avatar" />
+                <img :src="'/media/avatars/' + img" alt="avatar" />
             </div>
             <!--end::User-->
         </div>

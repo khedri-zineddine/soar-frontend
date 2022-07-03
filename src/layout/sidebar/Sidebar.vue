@@ -31,7 +31,7 @@
                     >
                         <span class="svg-icon">
                             <inline-svg
-                                src="media/icons/duotune/abstract/abs038.svg"
+                                src="/media/icons/duotune/abstract/abs038.svg"
                             />
                         </span>
                     </a>
@@ -46,7 +46,7 @@
                     >
                         <span class="svg-icon">
                             <inline-svg
-                                src="media/icons/duotune/abstract/abs042.svg"
+                                src="/media/icons/duotune/abstract/abs042.svg"
                             />
                         </span>
                     </a>
@@ -61,7 +61,7 @@
                     >
                         <span class="svg-icon">
                             <inline-svg
-                                src="media/icons/duotune/abstract/abs036.svg"
+                                src="/media/icons/duotune/abstract/abs036.svg"
                             />
                         </span>
                     </a>
@@ -76,7 +76,7 @@
                     >
                         <span class="svg-icon">
                             <inline-svg
-                                src="media/icons/duotune/coding/cod001.svg"
+                                src="/media/icons/duotune/coding/cod001.svg"
                             />
                         </span>
                     </a>
@@ -91,7 +91,7 @@
                     >
                         <span class="svg-icon">
                             <inline-svg
-                                src="media/icons/duotune/abstract/abs026.svg"
+                                src="/media/icons/duotune/abstract/abs026.svg"
                             />
                         </span>
                     </a>

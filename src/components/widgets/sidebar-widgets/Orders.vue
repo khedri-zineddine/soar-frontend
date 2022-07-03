@@ -17,7 +17,7 @@
                 >
                     <div class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </div>
                 </button>
@@ -76,27 +76,27 @@ export default defineComponent({
     setup() {
         const items = [
             {
-                image: "media/stock/600x400/img-20.jpg",
+                image: "/media/stock/600x400/img-20.jpg",
                 title: "Premium Coffee",
                 desc: "Arabica Specialty Brand",
             },
             {
-                image: "media/stock/600x400/img-25.jpg",
+                image: "/media/stock/600x400/img-25.jpg",
                 title: "Light Sneakers",
                 desc: "The Best Lightweight Sneakers",
             },
             {
-                image: "media/stock/600x400/img-24.jpg",
+                image: "/media/stock/600x400/img-24.jpg",
                 title: "Red Boots",
                 desc: "All Season Boots",
             },
             {
-                image: "media/stock/600x400/img-19.jpg",
+                image: "/media/stock/600x400/img-19.jpg",
                 title: "Wall Decoration",
                 desc: "Creative & Easy To Install",
             },
             {
-                image: "media/stock/600x400/img-27.jpg",
+                image: "/media/stock/600x400/img-27.jpg",
                 title: "Home Confort",
                 desc: "Smart Air Purifier",
             },

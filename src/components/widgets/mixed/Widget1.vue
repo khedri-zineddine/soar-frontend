@@ -24,7 +24,7 @@
                         >
                             <span class="svg-icon svg-icon-2">
                                 <inline-svg
-                                    src="media/icons/duotune/general/gen024.svg"
+                                    src="/media/icons/duotune/general/gen024.svg"
                                 />
                             </span>
                         </button>
@@ -90,7 +90,7 @@
                                     class="svg-icon svg-icon-5 svg-icon-success ms-1"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/arrows/arr066.svg"
+                                        src="/media/icons/duotune/arrows/arr066.svg"
                                     />
                                 </span>
                                 <span
@@ -98,7 +98,7 @@
                                     class="svg-icon svg-icon-5 svg-icon-danger ms-1"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/arrows/arr065.svg"
+                                        src="/media/icons/duotune/arrows/arr065.svg"
                                     />
                                 </span>
                             </div>
@@ -133,28 +133,28 @@ export default defineComponent({
     setup() {
         const items = [
             {
-                icon: "media/icons/duotune/maps/map004.svg",
+                icon: "/media/icons/duotune/maps/map004.svg",
                 title: "Sales",
                 description: "100 Regions",
                 stats: "$2,5b",
                 arrow: "up",
             },
             {
-                icon: "media/icons/duotune/general/gen024.svg",
+                icon: "/media/icons/duotune/general/gen024.svg",
                 title: "Revenue",
                 description: "Quarter 2/3",
                 stats: "$1,7b",
                 arrow: "down",
             },
             {
-                icon: "media/icons/duotune/electronics/elc005.svg",
+                icon: "/media/icons/duotune/electronics/elc005.svg",
                 title: "Growth",
                 description: "80% Rate",
                 stats: "$8,8m",
                 arrow: "up",
             },
             {
-                icon: "media/icons/duotune/general/gen005.svg",
+                icon: "/media/icons/duotune/general/gen005.svg",
                 title: "Dispute",
                 description: "3090 Refunds",
                 stats: "$270m",

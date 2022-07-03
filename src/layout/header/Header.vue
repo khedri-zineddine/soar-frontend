@@ -24,7 +24,7 @@
                 >
                     <span class="svg-icon svg-icon-1 mt-1">
                         <inline-svg
-                            src="media/icons/duotune/abstract/abs015.svg"
+                            src="/media/icons/duotune/abstract/abs015.svg"
                         />
                     </span>
                 </div>
@@ -34,7 +34,7 @@
                 <router-link to="/dashboard" class="d-flex align-items-center">
                     <img
                         alt="Logo"
-                        src="media/logos/Soar-logo.png"
+                        src="/media/logos/Soar-logo.png"
                         class="h-30px"
                     />
                 </router-link>

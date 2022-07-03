@@ -10,7 +10,7 @@
             <div class="symbol-label bg-light">
                 <span class="svg-icon svg-icon-2 svg-icon-gray-500">
                     <inline-svg
-                        src="media/icons/duotune/communication/com009.svg"
+                        src="/media/icons/duotune/communication/com009.svg"
                     />
                 </span>
             </div>
@@ -66,7 +66,7 @@
                     >
                         <!--begin::User-->
                         <div class="symbol symbol-circle symbol-40px">
-                            <img src="media/avatars/server.png" alt="img" />
+                            <img src="/media/avatars/server.png" alt="img" />
                         </div>
                         <!--end::User-->
                     </div>

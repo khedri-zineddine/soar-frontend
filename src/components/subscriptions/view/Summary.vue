@@ -30,7 +30,7 @@
                 >
                     <span class="svg-icon svg-icon-3">
                         <inline-svg
-                            src="media/icons/duotune/general/gen052.svg"
+                            src="/media/icons/duotune/general/gen052.svg"
                         />
                     </span>
                 </a>
@@ -49,7 +49,7 @@
                 <div class="d-flex align-items-center">
                     <!--begin::Avatar-->
                     <div class="symbol symbol-60px symbol-circle me-3">
-                        <img alt="Pic" src="media/avatars/300-5.jpg" />
+                        <img alt="Pic" src="/media/avatars/300-5.jpg" />
                     </div>
                     <!--end::Avatar-->
 
@@ -122,7 +122,7 @@
                         Mastercard
 
                         <img
-                            src="media/svg/card-logos/mastercard.svg"
+                            src="/media/svg/card-logos/mastercard.svg"
                             class="w-35px ms-2"
                             alt=""
                         />

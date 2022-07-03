@@ -13,7 +13,7 @@
             <a href="#" class="mb-12">
                 <img
                     alt="Logo"
-                    src="media/logos/Soar-logo.png"
+                    src="/media/logos/Soar-logo.png"
                     class="h-45px"
                 />
             </a>

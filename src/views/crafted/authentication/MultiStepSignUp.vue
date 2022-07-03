@@ -21,7 +21,7 @@
                     <router-link to="/dashboard" class="mb-10 mb-lg-20">
                         <img
                             alt="Logo"
-                            src="media/logos/logo-1.svg"
+                            src="/media/logos/logo-1.svg"
                             class="h-40px"
                         />
                     </router-link>
@@ -227,7 +227,7 @@
                                 >
                                     <span class="svg-icon svg-icon-4 me-1">
                                         <inline-svg
-                                            src="media/icons/duotune/arrows/arr063.svg"
+                                            src="/media/icons/duotune/arrows/arr063.svg"
                                         />
                                     </span>
                                     Back
@@ -250,7 +250,7 @@
                                             class="svg-icon svg-icon-3 ms-2 me-0"
                                         >
                                             <inline-svg
-                                                src="media/icons/duotune/arrows/arr064.svg"
+                                                src="/media/icons/duotune/arrows/arr064.svg"
                                             />
                                         </span>
                                     </span>
@@ -270,7 +270,7 @@
                                     Continue
                                     <span class="svg-icon svg-icon-4 ms-1 me-0">
                                         <inline-svg
-                                            src="media/icons/duotune/arrows/arr064.svg"
+                                            src="/media/icons/duotune/arrows/arr064.svg"
                                         />
                                     </span>
                                 </button>

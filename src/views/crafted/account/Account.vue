@@ -9,7 +9,7 @@
                     <div
                         class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative"
                     >
-                        <img src="media/avatars/300-1.jpg" alt="image" />
+                        <img src="/media/avatars/300-1.jpg" alt="image" />
                         <div
                             class="position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-white h-20px w-20px"
                         ></div>
@@ -37,7 +37,7 @@
                                         class="svg-icon svg-icon-1 svg-icon-primary"
                                     >
                                         <inline-svg
-                                            src="media/icons/duotune/general/gen026.svg"
+                                            src="/media/icons/duotune/general/gen026.svg"
                                         />
                                     </span>
                                 </a>
@@ -62,7 +62,7 @@
                                 >
                                     <span class="svg-icon svg-icon-4 me-1">
                                         <inline-svg
-                                            src="media/icons/duotune/communication/com006.svg"
+                                            src="/media/icons/duotune/communication/com006.svg"
                                         />
                                     </span>
                                     Developer
@@ -73,7 +73,7 @@
                                 >
                                     <span class="svg-icon svg-icon-4 me-1">
                                         <inline-svg
-                                            src="media/icons/duotune/general/gen018.svg"
+                                            src="/media/icons/duotune/general/gen018.svg"
                                         />
                                     </span>
                                     SF, Bay Area
@@ -84,7 +84,7 @@
                                 >
                                     <span class="svg-icon svg-icon-4 me-1">
                                         <inline-svg
-                                            src="media/icons/duotune/communication/com011.svg"
+                                            src="/media/icons/duotune/communication/com011.svg"
                                         />
                                     </span>
                                     max@kt.com
@@ -103,7 +103,7 @@
                             >
                                 <span class="svg-icon svg-icon-3 d-none">
                                     <inline-svg
-                                        src="media/icons/duotune/arrows/arr012.svg"
+                                        src="/media/icons/duotune/arrows/arr012.svg"
                                     />
                                 </span>
                                 Follow
@@ -151,7 +151,7 @@
                                             class="svg-icon svg-icon-success me-2"
                                         >
                                             <inline-svg
-                                                src="media/icons/duotune/arrows/arr066.svg"
+                                                src="/media/icons/duotune/arrows/arr066.svg"
                                             />
                                         </span>
                                         <div
@@ -183,7 +183,7 @@
                                             class="svg-icon svg-icon-3 svg-icon-danger me-2"
                                         >
                                             <inline-svg
-                                                src="media/icons/duotune/arrows/arr065.svg"
+                                                src="/media/icons/duotune/arrows/arr065.svg"
                                             />
                                         </span>
                                         <div
@@ -214,7 +214,7 @@
                                             class="svg-icon svg-icon-3 svg-icon-success me-2"
                                         >
                                             <inline-svg
-                                                src="media/icons/duotune/arrows/arr066.svg"
+                                                src="/media/icons/duotune/arrows/arr066.svg"
                                             />
                                         </span>
                                         <div

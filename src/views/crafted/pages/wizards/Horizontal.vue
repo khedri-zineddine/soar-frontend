@@ -95,7 +95,7 @@
                             >
                                 <span class="svg-icon svg-icon-4 me-1">
                                     <inline-svg
-                                        src="media/icons/duotune/arrows/arr063.svg"
+                                        src="/media/icons/duotune/arrows/arr063.svg"
                                     />
                                 </span>
                                 Back
@@ -116,7 +116,7 @@
                                     Submit
                                     <span class="svg-icon svg-icon-3 ms-2 me-0">
                                         <inline-svg
-                                            src="media/icons/duotune/arrows/arr064.svg"
+                                            src="/media/icons/duotune/arrows/arr064.svg"
                                         />
                                     </span>
                                 </span>
@@ -136,7 +136,7 @@
                                 Continue
                                 <span class="svg-icon svg-icon-4 ms-1 me-0">
                                     <inline-svg
-                                        src="media/icons/duotune/arrows/arr064.svg"
+                                        src="/media/icons/duotune/arrows/arr064.svg"
                                     />
                                 </span>
                             </button>

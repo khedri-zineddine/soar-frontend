@@ -16,7 +16,7 @@
                 >
                     <span class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>
@@ -48,7 +48,7 @@
                             class="svg-icon svg-icon-3x svg-icon-warning d-block my-2"
                         >
                             <inline-svg
-                                src="media/icons/duotune/general/gen032.svg"
+                                src="/media/icons/duotune/general/gen032.svg"
                             />
                         </span>
                         <a href="#" class="text-warning fw-bold fs-6">
@@ -60,7 +60,7 @@
                             class="svg-icon svg-icon-3x svg-icon-primary d-block my-2"
                         >
                             <inline-svg
-                                src="media/icons/duotune/arrows/arr075.svg"
+                                src="/media/icons/duotune/arrows/arr075.svg"
                             />
                         </span>
                         <a href="#" class="text-primary fw-bold fs-6">
@@ -76,7 +76,7 @@
                             class="svg-icon svg-icon-3x svg-icon-danger d-block my-2"
                         >
                             <inline-svg
-                                src="media/icons/duotune/abstract/abs027.svg"
+                                src="/media/icons/duotune/abstract/abs027.svg"
                             />
                         </span>
                         <a href="#" class="text-danger fw-bold fs-6 mt-2">
@@ -88,7 +88,7 @@
                             class="svg-icon svg-icon-3x svg-icon-success d-block my-2"
                         >
                             <inline-svg
-                                src="media/icons/duotune/communication/com010.svg"
+                                src="/media/icons/duotune/communication/com010.svg"
                             />
                         </span>
                         <a href="#" class="text-success fw-bold fs-6 mt-2">

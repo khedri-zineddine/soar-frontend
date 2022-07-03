@@ -13,7 +13,7 @@
                 >
                     <!--begin::Image-->
                     <div class="symbol symbol-60px mb-6">
-                        <img :src="`media/svg/files/${fileType}.svg`" alt="" />
+                        <img :src="`/media/svg/files/${fileType}.svg`" alt="" />
                     </div>
                     <!--end::Image-->
 

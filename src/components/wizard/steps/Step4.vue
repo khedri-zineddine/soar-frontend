@@ -73,17 +73,17 @@
                         class="position-absolute translate-middle-y top-50 end-0 me-5"
                     >
                         <img
-                            src="media/svg/card-logos/visa.svg"
+                            src="/media/svg/card-logos/visa.svg"
                             alt=""
                             class="h-25px"
                         />
                         <img
-                            src="media/svg/card-logos/mastercard.svg"
+                            src="/media/svg/card-logos/mastercard.svg"
                             alt=""
                             class="h-25px"
                         />
                         <img
-                            src="media/svg/card-logos/american-express.svg"
+                            src="/media/svg/card-logos/american-express.svg"
                             alt=""
                             class="h-25px"
                         />
@@ -192,7 +192,7 @@
                         >
                             <span class="svg-icon svg-icon-2hx">
                                 <inline-svg
-                                    src="media/icons/duotune/finance/fin002.svg"
+                                    src="/media/icons/duotune/finance/fin002.svg"
                                 />
                             </span>
                         </div>

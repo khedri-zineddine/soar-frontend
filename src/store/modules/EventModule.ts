@@ -2,7 +2,7 @@ import { Actions, Mutations } from "@/store/enums/EventEnums";
 import { Module, Action, Mutation, VuexModule } from "vuex-module-decorators";
 import ApiService from "@/core/services/ApiService";
 import axios from "axios";
-const API_URL = import.meta.env.VITE_SOAR_API_URL;
+const API_URL = APP_ENV.SOAR_API;
 export interface EventInfo {
     otherRequest: boolean;
     eventData: {

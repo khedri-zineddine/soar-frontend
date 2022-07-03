@@ -70,7 +70,7 @@
                             <div class="symbol-label bg-light">
                                 <span>
                                     <inline-svg
-                                        src="media/icons/duotune/communication/com004.svg"
+                                        src="/media/icons/duotune/communication/com004.svg"
                                     />
                                 </span>
                             </div>
@@ -148,7 +148,7 @@ import LoginModal from "@/components/modals/general/LoginModal.vue";
 import { Actions } from "@/store/enums/EventEnums";
 import { mapState } from "vuex";
 
-const API_URL = import.meta.env.VITE_SOAR_API_URL;
+const API_URL = APP_ENV.SOAR_API;
 declare interface EventELem {
     status: string;
     title: string;
