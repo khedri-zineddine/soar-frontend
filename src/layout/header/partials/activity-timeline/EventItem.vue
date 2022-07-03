@@ -70,11 +70,13 @@ import { defineComponent, onMounted } from "vue";
 export default defineComponent({
     name: "event-item",
     props: {
+        index: Number,
         status: String,
         title: String,
         img: String,
         typeVulnerability: String,
         time: String,
+        type: String,
         onDetail: Function,
     },
     setup() {
@@ -99,8 +101,13 @@ export default defineComponent({
                 0
             );
         },
-        onShowDetails: function (event) {
-            if (this.onDetail) this.onDetail(event);
+        onShowDetails: function () {
+            let eventType = "email";
+            if (this.img.includes("email")) eventType = "email";
+            if (this.img.includes("ransomware")) eventType = "ransomware";
+            if (this.img.includes("ssh")) eventType = "ssh";
+            if (this.img.includes("login")) eventType = "login";
+            if (this.onDetail) this.onDetail(this.type, this.index, eventType);
         },
     },
 });
