@@ -1,6 +1,61 @@
 <template>
     <!--begin::List Widget 5-->
-    <EventModal :show="showDetail" @clicked="onEventModalClicked" />
+    <div v-if="eventType === 'email'">
+        <EmailModal
+            v-if="dataType == 'db'"
+            :show="showDetail"
+            @clicked="onEventModalClicked"
+            :data="eventData[eventId]"
+        />
+        <EmailModal
+            v-else
+            :show="showDetail"
+            @clicked="onEventModalClicked"
+            :data="realTimeEvents[eventId]"
+        />
+    </div>
+    <div v-if="eventType === 'ssh'">
+        <SSHModal
+            v-if="dataType == 'db'"
+            :show="showDetail"
+            @clicked="onEventModalClicked"
+            :data="eventData[eventId]"
+        />
+        <SSHModal
+            v-else
+            :show="showDetail"
+            @clicked="onEventModalClicked"
+            :data="realTimeEvents[eventId]"
+        />
+    </div>
+    <div v-if="eventType === 'login'">
+        <LoginModal
+            v-if="dataType == 'db'"
+            :show="showDetail"
+            @clicked="onEventModalClicked"
+            :data="eventData[eventId]"
+        />
+        <LoginModal
+            v-else
+            :show="showDetail"
+            @clicked="onEventModalClicked"
+            :data="realTimeEvents[eventId]"
+        />
+    </div>
+    <div v-if="eventType === 'ransomware'">
+        <RansomwareModal
+            v-if="dataType == 'db'"
+            :show="showDetail"
+            @clicked="onEventModalClicked"
+            :data="eventData[eventId]"
+        />
+        <RansomwareModal
+            v-else
+            :show="showDetail"
+            @clicked="onEventModalClicked"
+            :data="realTimeEvents[eventId]"
+        />
+    </div>
     <div class="card" :class="widgetClasses">
         <!--begin::Header-->
         <div class="mt-7">
@@ -20,19 +75,30 @@
                                 </span>
                             </div>
                         </div>
-                        Il y a 4 nouvelles alertes de sécurité pour vous au sein
-                        de votre infrastructure :
+                        Nouvelles alertes de sécurité pour vous au sein de votre
+                        infrastructure :
                     </div>
                     <!--end::Title-->
 
                     <!--begin::Description-->
-                    <div class="d-flex align-items-center mt-1 fs-6">
-                        <!--begin::Info-->
+                    <!--<div class="d-flex align-items-center mt-1 fs-6">
+                        
                         <div class="text-muted me-2 fs-7">
-                            Dernière alerte à 4:23 PM
+                            Dernière alerte à
+                            {{
+                                new Date(timelastEvent).toLocaleDateString(
+                                    "en-US",
+                                    {
+                                        month: "short",
+                                        day: "2-digit",
+                                        hour: "2-digit",
+                                        minute: "2-digit",
+                                        second: "2-digit",
+                                    }
+                                )
+                            }}
                         </div>
-                        <!--end::Info-->
-                    </div>
+                    </div>-->
                     <!--end::Description-->
                 </div>
                 <!--end::Timeline heading-->
@@ -48,6 +114,8 @@
                         :typeVulnerability="item.typeVulnerability"
                         :img="item.img"
                         :onDetail="onShowDetail"
+                        type="realtime"
+                        :index="idx"
                     ></EventItem>
                     <EventItem
                         v-for="(item, idx) in eventData"
@@ -58,6 +126,8 @@
                         :typeVulnerability="item.typeVulnerability"
                         :img="item.img"
                         :onDetail="onShowDetail"
+                        type="db"
+                        :index="idx"
                     ></EventItem>
                     <!--end::Record-->
                 </div>
@@ -71,7 +141,10 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import EventItem from "./EventItem.vue";
-import EventModal from "@/components/modals/general/EventModal.vue";
+import EmailModal from "@/components/modals/general/EmailModal.vue";
+import SSHModal from "@/components/modals/general/SSHModal.vue";
+import RansomwareModal from "@/components/modals/general/RansomwareModal.vue";
+import LoginModal from "@/components/modals/general/LoginModal.vue";
 import { Actions } from "@/store/enums/EventEnums";
 import { mapState } from "vuex";
 
@@ -88,7 +161,10 @@ export default defineComponent({
     name: "incident-items",
     components: {
         EventItem,
-        EventModal,
+        EmailModal,
+        SSHModal,
+        RansomwareModal,
+        LoginModal,
     },
     props: {},
     data() {
@@ -97,6 +173,10 @@ export default defineComponent({
             realTimeEvents: [] as EventELem[],
             source: new EventSource(`${API_URL}/stream`),
             timer: null,
+            eventId: 0 as number,
+            dataType: "db",
+            eventType: "",
+            timelastEvent: null,
         };
     },
     mounted: function () {
@@ -111,7 +191,7 @@ export default defineComponent({
         this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
         this.timer = setInterval(() => {
             this.$store.dispatch(Actions.GET_PHSHING_EMAILS);
-        }, 300000);
+        }, 600000);
     },
 
     beforeUnmount: function () {
@@ -139,9 +219,17 @@ export default defineComponent({
             },
         }),
     },
+    updated: function () {
+        /*let rEvent = this.realTimeEvents.at(-1);
+        let dEvent = this.phishingEmails.at(-1);
+        if (new Date(rEvent).getTime() >= new Date(dEvent).getTime())
+            this.timelastEvent = rEvent.time;
+        if (new Date(rEvent).getTime() < new Date(dEvent).getTime())
+            this.timelastEvent = dEvent.time;*/
+        console.log("display and check times  ");
+    },
     methods: {
         onEventReceived(event) {
-            console.log(event.data);
             console.log("---------- i have received an login alert --------");
             const data = JSON.parse(event.data);
             //console.log(data, this.realTimeEvents);
@@ -181,8 +269,12 @@ export default defineComponent({
             };
             this.realTimeEvents.unshift(obj);
         },
-        onShowDetail: function (event) {
+        onShowDetail: function (type, index, eventType) {
+            console.log(type, index, eventType);
             this.showDetail = true;
+            this.dataType = type;
+            this.eventId = index;
+            this.eventType = eventType;
         },
         onEventModalClicked: function (value) {
             this.showDetail = value;
