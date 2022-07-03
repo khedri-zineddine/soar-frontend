@@ -20,7 +20,7 @@
                     >
                         <span class="svg-icon svg-icon-1">
                             <inline-svg
-                                src="media/icons/duotune/arrows/arr061.svg"
+                                src="/media/icons/duotune/arrows/arr061.svg"
                             />
                         </span>
                     </div>
@@ -138,7 +138,7 @@
                                         <span class="symbol-label bg-secondary">
                                             <span class="svg-icon">
                                                 <inline-svg
-                                                    src="media/icons/duotune/general/gen025.svg"
+                                                    src="/media/icons/duotune/general/gen025.svg"
                                                 />
                                             </span>
                                         </span>
@@ -333,7 +333,7 @@
                                     Submit
                                     <span class="svg-icon svg-icon-3 ms-2 me-0">
                                         <inline-svg
-                                            src="media/icons/duotune/arrows/arr064.svg"
+                                            src="/media/icons/duotune/arrows/arr064.svg"
                                         />
                                     </span>
                                 </span>

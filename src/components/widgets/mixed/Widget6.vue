@@ -24,7 +24,7 @@
                 >
                     <span class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>
@@ -50,7 +50,7 @@
                                         class="svg-icon svg-icon-1 svg-icon-info"
                                     >
                                         <inline-svg
-                                            src="media/icons/duotune/art/art007.svg"
+                                            src="/media/icons/duotune/art/art007.svg"
                                         />
                                     </span>
                                 </div>
@@ -81,7 +81,7 @@
                                         class="svg-icon svg-icon-1 svg-icon-danger"
                                     >
                                         <inline-svg
-                                            src="media/icons/duotune/abstract/abs027.svg"
+                                            src="/media/icons/duotune/abstract/abs027.svg"
                                         />
                                     </span>
                                 </div>
@@ -114,7 +114,7 @@
                                         class="svg-icon svg-icon-1 svg-icon-success"
                                     >
                                         <inline-svg
-                                            src="media/icons/duotune/ecommerce/ecm002.svg"
+                                            src="/media/icons/duotune/ecommerce/ecm002.svg"
                                         />
                                     </span>
                                 </div>
@@ -143,7 +143,7 @@
                                         class="svg-icon svg-icon-1 svg-icon-primary"
                                     >
                                         <inline-svg
-                                            src="media/icons/duotune/ecommerce/ecm010.svg"
+                                            src="/media/icons/duotune/ecommerce/ecm010.svg"
                                         />
                                     </span>
                                 </div>

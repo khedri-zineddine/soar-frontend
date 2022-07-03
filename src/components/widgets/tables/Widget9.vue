@@ -28,7 +28,7 @@
                 >
                     <span class="svg-icon svg-icon-3">
                         <inline-svg
-                            src="media/icons/duotune/arrows/arr075.svg"
+                            src="/media/icons/duotune/arrows/arr075.svg"
                         />
                     </span>
                     New Member
@@ -156,7 +156,7 @@
                                     >
                                         <span class="svg-icon svg-icon-3">
                                             <inline-svg
-                                                src="media/icons/duotune/general/gen019.svg"
+                                                src="/media/icons/duotune/general/gen019.svg"
                                             />
                                         </span>
                                     </a>
@@ -167,7 +167,7 @@
                                     >
                                         <span class="svg-icon svg-icon-3">
                                             <inline-svg
-                                                src="media/icons/duotune/art/art005.svg"
+                                                src="/media/icons/duotune/art/art005.svg"
                                             />
                                         </span>
                                     </a>
@@ -178,7 +178,7 @@
                                     >
                                         <span class="svg-icon svg-icon-3">
                                             <inline-svg
-                                                src="media/icons/duotune/general/gen027.svg"
+                                                src="/media/icons/duotune/general/gen027.svg"
                                             />
                                         </span>
                                     </a>
@@ -211,7 +211,7 @@ export default defineComponent({
 
         const list = [
             {
-                image: "media/avatars/300-14.jpg",
+                image: "/media/avatars/300-14.jpg",
                 name: "Ana Simmons",
                 skills: "HTML, JS, ReactJS",
                 companyName: "Intertico",
@@ -220,7 +220,7 @@ export default defineComponent({
                 color: "primary",
             },
             {
-                image: "media/avatars/300-2.jpg",
+                image: "/media/avatars/300-2.jpg",
                 name: "Jessie Clarcson",
                 skills: "C#, ASP.NET, MS SQL",
                 companyName: "Agoda",
@@ -229,7 +229,7 @@ export default defineComponent({
                 color: "danger",
             },
             {
-                image: "media/avatars/300-5.jpg",
+                image: "/media/avatars/300-5.jpg",
                 name: "Lebron Wayde",
                 skills: "PHP, Laravel, VueJS",
                 companyName: "RoadGee",
@@ -238,7 +238,7 @@ export default defineComponent({
                 color: "success",
             },
             {
-                image: "media/avatars/300-20.jpg",
+                image: "/media/avatars/300-20.jpg",
                 name: "Natali Goodwin",
                 skills: "Python, PostgreSQL, ReactJS",
                 companyName: "The Hill",
@@ -247,7 +247,7 @@ export default defineComponent({
                 color: "warning",
             },
             {
-                image: "media/avatars/300-23.jpg",
+                image: "/media/avatars/300-23.jpg",
                 name: "Kevin Leonard",
                 skills: "HTML, JS, ReactJS",
                 companyName: "RoadGee",

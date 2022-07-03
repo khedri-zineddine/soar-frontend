@@ -27,7 +27,7 @@
                 >
                     <span class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>

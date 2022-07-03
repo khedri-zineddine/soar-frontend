@@ -18,7 +18,7 @@
                 >
                     <span class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>
@@ -78,27 +78,27 @@ export default defineComponent({
     setup() {
         const items = [
             {
-                image: "media/stock/600x400/img-1.jpg",
+                image: "/media/stock/600x400/img-1.jpg",
                 title: "Spotify App",
                 desc: "HTML, SASS, Bootstrap",
             },
             {
-                image: "media/stock/600x400/img-2.jpg",
+                image: "/media/stock/600x400/img-2.jpg",
                 title: "Fitnes Drive",
                 desc: "Angular, Typescript, Bootstrap",
             },
             {
-                image: "media/stock/600x400/img-3.jpg",
+                image: "/media/stock/600x400/img-3.jpg",
                 title: "Taskify App",
                 desc: "HTML, CSS. jQuery",
             },
             {
-                image: "media/stock/600x400/img-5.jpg",
+                image: "/media/stock/600x400/img-5.jpg",
                 title: "Calendr App",
                 desc: "React, MangoDb. Node",
             },
             {
-                image: "media/stock/600x400/img-6.jpg",
+                image: "/media/stock/600x400/img-6.jpg",
                 title: "Stocked SaaS",
                 desc: "PHP, Laravel, Oracle",
             },

@@ -24,7 +24,7 @@
                 >
                     <span class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>
@@ -53,7 +53,7 @@
                                 class="svg-icon svg-icon-5 svg-icon-success ms-1"
                             >
                                 <inline-svg
-                                    src="media/icons/duotune/arrows/arr066.svg"
+                                    src="/media/icons/duotune/arrows/arr066.svg"
                                 />
                             </span>
                         </div>
@@ -104,7 +104,7 @@
                                 class="svg-icon svg-icon-5 svg-icon-danger ms-1"
                             >
                                 <inline-svg
-                                    src="media/icons/duotune/arrows/arr065.svg"
+                                    src="/media/icons/duotune/arrows/arr065.svg"
                                 />
                             </span>
                         </div>

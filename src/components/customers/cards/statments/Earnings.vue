@@ -33,7 +33,7 @@
                             >
                             <span class="svg-icon svg-icon-1 svg-icon-success">
                                 <inline-svg
-                                    src="media/icons/duotune/arrows/arr066.svg"
+                                    src="/media/icons/duotune/arrows/arr066.svg"
                                 />
                             </span>
                         </span>
@@ -56,7 +56,7 @@
                             >%
                             <span class="svg-icon svg-icon-1 svg-icon-danger">
                                 <inline-svg
-                                    src="media/icons/duotune/arrows/arr065.svg"
+                                    src="/media/icons/duotune/arrows/arr065.svg"
                                 />
                             </span>
                         </span>

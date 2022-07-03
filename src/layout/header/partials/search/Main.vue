@@ -16,7 +16,7 @@
                     <span class="symbol-label bg-light">
                         <span class="svg-icon svg-icon-2 svg-icon-primary">
                             <inline-svg
-                                src="media/icons/duotune/electronics/elc004.svg"
+                                src="/media/icons/duotune/electronics/elc004.svg"
                             />
                         </span>
                     </span>
@@ -41,7 +41,7 @@
                     <span class="symbol-label bg-light">
                         <span class="svg-icon svg-icon-2 svg-icon-primary">
                             <inline-svg
-                                src="media/icons/duotune/graphs/gra001.svg"
+                                src="/media/icons/duotune/graphs/gra001.svg"
                             />
                         </span>
                     </span>
@@ -66,7 +66,7 @@
                     <span class="symbol-label bg-light">
                         <span class="svg-icon svg-icon-2 svg-icon-primary">
                             <inline-svg
-                                src="media/icons/duotune/graphs/gra006.svg"
+                                src="/media/icons/duotune/graphs/gra006.svg"
                             />
                         </span>
                     </span>
@@ -91,7 +91,7 @@
                     <span class="symbol-label bg-light">
                         <span class="svg-icon svg-icon-2 svg-icon-primary">
                             <inline-svg
-                                src="media/icons/duotune/graphs/gra002.svg"
+                                src="/media/icons/duotune/graphs/gra002.svg"
                             />
                         </span>
                     </span>
@@ -116,7 +116,7 @@
                     <span class="symbol-label bg-light">
                         <span class="svg-icon svg-icon-2 svg-icon-primary">
                             <inline-svg
-                                src="media/icons/duotune/communication/com010.svg"
+                                src="/media/icons/duotune/communication/com010.svg"
                             />
                         </span>
                     </span>
@@ -141,7 +141,7 @@
                     <span class="symbol-label bg-light">
                         <span class="svg-icon svg-icon-2 svg-icon-primary">
                             <inline-svg
-                                src="media/icons/duotune/finance/fin001.svg"
+                                src="/media/icons/duotune/finance/fin001.svg"
                             />
                         </span>
                     </span>
@@ -166,7 +166,7 @@
                     <span class="symbol-label bg-light">
                         <span class="svg-icon svg-icon-2 svg-icon-primary">
                             <inline-svg
-                                src="media/icons/duotune/graphs/gra002.svg"
+                                src="/media/icons/duotune/graphs/gra002.svg"
                             />
                         </span>
                     </span>

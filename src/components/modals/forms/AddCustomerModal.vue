@@ -24,7 +24,7 @@
                     >
                         <span class="svg-icon svg-icon-1">
                             <inline-svg
-                                src="media/icons/duotune/arrows/arr061.svg"
+                                src="/media/icons/duotune/arrows/arr061.svg"
                             />
                         </span>
                     </div>
@@ -125,7 +125,7 @@
                                 <span class="ms-2 rotate-180">
                                     <span class="svg-icon svg-icon-3">
                                         <inline-svg
-                                            src="media/icons/duotune/arrows/arr072.svg"
+                                            src="/media/icons/duotune/arrows/arr072.svg"
                                         />
                                     </span>
                                 </span>
@@ -965,7 +965,7 @@
                                 Submit
                                 <span class="svg-icon svg-icon-3 ms-2 me-0">
                                     <inline-svg
-                                        src="media/icons/duotune/arrows/arr064.svg"
+                                        src="/media/icons/duotune/arrows/arr064.svg"
                                     />
                                 </span>
                             </span>

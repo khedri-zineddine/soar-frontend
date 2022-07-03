@@ -16,7 +16,7 @@
                 >
                     <span class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>
@@ -44,7 +44,7 @@
                     >
                         <span class="svg-icon svg-icon-1">
                             <inline-svg
-                                src="media/icons/duotune/abstract/abs027.svg"
+                                src="/media/icons/duotune/abstract/abs027.svg"
                             />
                         </span>
                     </span>
@@ -96,28 +96,28 @@ export default defineComponent({
         const list = ref([
             {
                 color: "warning",
-                icon: "media/icons/duotune/abstract/abs027.svg",
+                icon: "/media/icons/duotune/abstract/abs027.svg",
                 title: "Group lunch celebration",
                 text: "Due in 2 Days",
                 number: "+28%",
             },
             {
                 color: "success",
-                icon: "media/icons/duotune/art/art005.svg",
+                icon: "/media/icons/duotune/art/art005.svg",
                 title: "Navigation optimization",
                 text: "Due in 2 Days",
                 number: "+50%",
             },
             {
                 color: "danger",
-                icon: "media/icons/duotune/communication/com012.svg",
+                icon: "/media/icons/duotune/communication/com012.svg",
                 title: "Rebrand strategy planning",
                 text: "Due in 5 Days",
                 number: "-27%",
             },
             {
                 color: "info",
-                icon: "media/icons/duotune/communication/com012.svg",
+                icon: "/media/icons/duotune/communication/com012.svg",
                 title: "Product goals strategy",
                 text: "Due in 7 Days",
                 number: "+8%",

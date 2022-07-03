@@ -6,7 +6,8 @@ WORKDIR /soar-frontend
 
 ENV PORT=$port
 RUN npm install
+RUN npm run build
 
 EXPOSE $PORT
 
-CMD npm run serve
+CMD export APP_PORT=$PORT && npm run heroku:serve

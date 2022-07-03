@@ -24,7 +24,7 @@
                     >
                         <span class="svg-icon svg-icon-1">
                             <inline-svg
-                                src="media/icons/duotune/arrows/arr061.svg"
+                                src="/media/icons/duotune/arrows/arr061.svg"
                             />
                         </span>
                     </div>
@@ -59,7 +59,7 @@
                                     class="svg-icon svg-icon-2tx svg-icon-warning me-4"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/general/gen044.svg"
+                                        src="/media/icons/duotune/general/gen044.svg"
                                     />
                                 </span>
                                 <!--begin::Wrapper-->

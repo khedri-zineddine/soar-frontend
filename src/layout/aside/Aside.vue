@@ -17,7 +17,7 @@
             <router-link to="/dashboard">
                 <img
                     alt="Logo"
-                    src="media/logos/Soar-logo.png"
+                    src="/media/logos/Soar-logo.png"
                     class="h-30px logo"
                 />
             </router-link>
@@ -39,7 +39,7 @@
                 <div class="d-flex align-items-center">
                     <!--begin::Avatar-->
                     <div class="symbol symbol-circle symbol-40px">
-                        <img src="media/avatars/Djalil.jpg" alt="photo" />
+                        <img src="/media/avatars/Djalil.jpg" alt="photo" />
                     </div>
                     <!--end::Avatar-->
 
@@ -73,7 +73,7 @@
                     >
                         <span class="svg-icon svg-icon-1">
                             <inline-svg
-                                src="media/icons/duotune/coding/cod001.svg"
+                                src="/media/icons/duotune/coding/cod001.svg"
                             />
                         </span>
                     </div>

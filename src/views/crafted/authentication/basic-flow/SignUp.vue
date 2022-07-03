@@ -34,7 +34,7 @@
             >
                 <img
                     alt="Logo"
-                    src="media/svg/brand-logos/google-icon.svg"
+                    src="/media/svg/brand-logos/google-icon.svg"
                     class="h-20px me-3"
                 />
                 Sign in with Google
@@ -275,7 +275,7 @@ export default defineComponent({
             store.dispatch(Actions.LOGOUT);
 
             // eslint-disable-next-line
-      submitButton.value!.disabled = true;
+            submitButton.value!.disabled = true;
 
             // Activate indicator
             submitButton.value?.setAttribute("data-kt-indicator", "on");
@@ -313,7 +313,7 @@ export default defineComponent({
 
             submitButton.value?.removeAttribute("data-kt-indicator");
             // eslint-disable-next-line
-      submitButton.value!.disabled = false;
+            submitButton.value!.disabled = false;
         };
 
         return {

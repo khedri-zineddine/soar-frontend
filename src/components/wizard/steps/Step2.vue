@@ -163,7 +163,7 @@
                                     class="svg-icon svg-icon-1 svg-icon-gray-600"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/finance/fin001.svg"
+                                        src="/media/icons/duotune/finance/fin001.svg"
                                     />
                                 </span>
                             </span>
@@ -208,7 +208,7 @@
                                     class="svg-icon svg-icon-1 svg-icon-gray-600"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/graphs/gra006.svg"
+                                        src="/media/icons/duotune/graphs/gra006.svg"
                                     />
                                 </span>
                             </span>
@@ -254,7 +254,7 @@
                                     class="svg-icon svg-icon-1 svg-icon-gray-600"
                                 >
                                     <inline-svg
-                                        src="media/icons/duotune/graphs/gra008.svg"
+                                        src="/media/icons/duotune/graphs/gra008.svg"
                                     />
                                 </span>
                             </span>

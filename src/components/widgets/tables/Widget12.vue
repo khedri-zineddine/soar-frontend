@@ -23,7 +23,7 @@
                 >
                     <span class="svg-icon svg-icon-2">
                         <inline-svg
-                            src="media/icons/duotune/general/gen024.svg"
+                            src="/media/icons/duotune/general/gen024.svg"
                         />
                     </span>
                 </button>
@@ -190,7 +190,7 @@ export default defineComponent({
         const list = [
             {
                 agent: {
-                    image: "media/svg/avatars/001-boy.svg",
+                    image: "/media/svg/avatars/001-boy.svg",
                     name: "Brad Simmons",
                     skills: "HTML, JS, ReactJS",
                 },
@@ -213,7 +213,7 @@ export default defineComponent({
             },
             {
                 agent: {
-                    image: "media/svg/avatars/047-girl-25.svg",
+                    image: "/media/svg/avatars/047-girl-25.svg",
                     name: "Lebron Wayde",
                     skills: "PHP, Laravel, VueJS",
                 },
@@ -236,7 +236,7 @@ export default defineComponent({
             },
             {
                 agent: {
-                    image: "media/svg/avatars/006-girl-3.svg",
+                    image: "/media/svg/avatars/006-girl-3.svg",
                     name: "Brad Simmons",
                     skills: "HTML, JS, ReactJS",
                 },
@@ -259,7 +259,7 @@ export default defineComponent({
             },
             {
                 agent: {
-                    image: "media/svg/avatars/014-girl-7.svg",
+                    image: "/media/svg/avatars/014-girl-7.svg",
                     name: "Natali Trump",
                     skills: "HTML, JS, ReactJS",
                 },
@@ -282,7 +282,7 @@ export default defineComponent({
             },
             {
                 agent: {
-                    image: "media/svg/avatars/020-girl-11.svg",
+                    image: "/media/svg/avatars/020-girl-11.svg",
                     name: "	Jessie Clarcson",
                     skills: "HTML, JS, ReactJS",
                 },

@@ -98,7 +98,7 @@
                     >
                         Mastercard
                         <img
-                            src="media/svg/card-logos/mastercard.svg"
+                            src="/media/svg/card-logos/mastercard.svg"
                             class="w-35px ms-2"
                             alt=""
                         />

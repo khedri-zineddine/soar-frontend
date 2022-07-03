@@ -20,7 +20,7 @@
                     >
                         <span class="svg-icon svg-icon-1">
                             <inline-svg
-                                src="media/icons/duotune/arrows/arr061.svg"
+                                src="/media/icons/duotune/arrows/arr061.svg"
                             />
                         </span>
                     </div>
@@ -86,7 +86,7 @@
                             <a href="#" class="btn btn-light-primary w-100">
                                 <img
                                     alt="Logo"
-                                    src="media/svg/brand-logos/google-icon.svg"
+                                    src="/media/svg/brand-logos/google-icon.svg"
                                     class="h-15px me-3"
                                 />
                                 Import Contacts
@@ -98,7 +98,7 @@
                             >
                                 <img
                                     alt="Logo"
-                                    src="media/svg/brand-logos/facebook-2.svg"
+                                    src="/media/svg/brand-logos/facebook-2.svg"
                                     class="h-20px me-3"
                                 />
                                 Facebook
@@ -107,7 +107,7 @@
                             <a href="#" class="btn btn-icon btn-twitter w-100">
                                 <img
                                     alt="Logo"
-                                    src="media/svg/brand-logos/twitter.svg"
+                                    src="/media/svg/brand-logos/twitter.svg"
                                     class="h-20px me-3"
                                 />
                                 Twitter

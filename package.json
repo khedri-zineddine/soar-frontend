@@ -5,9 +5,10 @@
     "scripts": {
         "dev": "vite --mode dev",
         "serve": "vite --mode prod",
-        "build": "vue-tsc --noEmit && vite build",
+        "build": "vite build --mode prod",
         "preview": "vite preview",
-        "lint": "vue-cli-service lint"
+        "lint": "vue-cli-service lint",
+        "heroku:serve": "node server.js"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.15.4",
@@ -49,6 +50,7 @@
         "vue-router": "^4.0.3",
         "vue3-apexcharts": "^1.4.1",
         "vuex": "^4.0.0",
+        "express": "^4.17.3",
         "yup": "^0.32.8"
     },
     "devDependencies": {

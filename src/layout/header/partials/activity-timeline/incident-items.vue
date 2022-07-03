@@ -15,7 +15,7 @@
                             <div class="symbol-label bg-light">
                                 <span>
                                     <inline-svg
-                                        src="media/icons/duotune/communication/com004.svg"
+                                        src="/media/icons/duotune/communication/com004.svg"
                                     />
                                 </span>
                             </div>

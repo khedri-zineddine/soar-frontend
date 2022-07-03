@@ -9,7 +9,7 @@
                 <div class="d-flex align-items-center flex-grow-1">
                     <!--begin::Avatar-->
                     <div class="symbol symbol-45px me-5">
-                        <img src="media/avatars/300-13.jpg" alt="" />
+                        <img src="/media/avatars/300-13.jpg" alt="" />
                     </div>
                     <!--end::Avatar-->
 
@@ -37,7 +37,7 @@
                     >
                         <span class="svg-icon svg-icon-2">
                             <inline-svg
-                                src="media/icons/duotune/general/gen024.svg"
+                                src="/media/icons/duotune/general/gen024.svg"
                             />
                         </span>
                     </button>
@@ -74,7 +74,7 @@
                     >
                         <span class="svg-icon svg-icon-3">
                             <inline-svg
-                                src="media/icons/duotune/communication/com012.svg"
+                                src="/media/icons/duotune/communication/com012.svg"
                             />
                         </span>
                         189
@@ -86,7 +86,7 @@
                     >
                         <span class="svg-icon svg-icon-2">
                             <inline-svg
-                                src="media/icons/duotune/general/gen030.svg"
+                                src="/media/icons/duotune/general/gen030.svg"
                             />
                         </span>
                         229
@@ -115,7 +115,7 @@
                     >
                         <span class="svg-icon svg-icon-3 mb-3">
                             <inline-svg
-                                src="media/icons/duotune/communication/com008.svg"
+                                src="/media/icons/duotune/communication/com008.svg"
                             />
                         </span>
                     </span>
@@ -125,7 +125,7 @@
                     >
                         <span class="svg-icon svg-icon-2 mb-3">
                             <inline-svg
-                                src="media/icons/duotune/general/gen018.svg"
+                                src="/media/icons/duotune/general/gen018.svg"
                             />
                         </span>
                     </span>

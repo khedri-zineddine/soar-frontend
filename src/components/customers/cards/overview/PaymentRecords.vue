@@ -20,7 +20,7 @@
                 >
                     <span class="svg-icon svg-icon-3">
                         <inline-svg
-                            src="media/icons/duotune/general/gen035.svg"
+                            src="/media/icons/duotune/general/gen035.svg"
                         />
                     </span>
                     Add payment
@@ -64,7 +64,7 @@
                         >Actions
                         <span class="svg-icon svg-icon-5 m-0">
                             <inline-svg
-                                src="media/icons/duotune/arrows/arr072.svg"
+                                src="/media/icons/duotune/arrows/arr072.svg"
                             />
                         </span>
                     </a>

@@ -10,7 +10,7 @@
             <div class="symbol-label bg-light">
                 <span class="svg-icon svg-icon-2 svg-icon-gray-500">
                     <inline-svg
-                        src="media/icons/duotune/communication/com004.svg"
+                        src="/media/icons/duotune/communication/com004.svg"
                     />
                 </span>
             </div>
@@ -67,7 +67,7 @@
                     >
                         <!--begin::User-->
                         <div class="symbol symbol-circle symbol-40px">
-                            <img src="media/avatars/Switch.png" alt="img" />
+                            <img src="/media/avatars/Switch.png" alt="img" />
                         </div>
                         <!--end::User-->
                     </div>
@@ -116,7 +116,7 @@
                         <!--begin::User-->
                         <div class="symbol symbol-circle">
                             <img
-                                src="media/avatars/login.png"
+                                src="/media/avatars/login.png"
                                 alt="img"
                                 width="50px"
                                 height="50px"
@@ -166,7 +166,7 @@
                     >
                         <!--begin::User-->
                         <div class="symbol symbol-circle symbol-40px">
-                            <img src="media/avatars/Switch.png" alt="img" />
+                            <img src="/media/avatars/Switch.png" alt="img" />
                         </div>
                         <!--end::User-->
                     </div>
@@ -217,7 +217,7 @@
                     >
                         <!--begin::User-->
                         <div class="symbol symbol-circle symbol-40px">
-                            <img src="media/avatars/router.png" alt="img" />
+                            <img src="/media/avatars/router.png" alt="img" />
                         </div>
                         <!--end::User-->
                     </div>
@@ -265,7 +265,7 @@
                     >
                         <!--begin::User-->
                         <div class="symbol symbol-circle symbol-40px">
-                            <img src="media/avatars/router.png" alt="img" />
+                            <img src="/media/avatars/router.png" alt="img" />
                         </div>
                         <!--end::User-->
                     </div>

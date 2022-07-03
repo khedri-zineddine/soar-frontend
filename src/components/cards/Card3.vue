@@ -75,7 +75,7 @@
                 >
                     <span class="svg-icon svg-icon-3">
                         <inline-svg
-                            src="media/icons/duotune/arrows/arr012.svg"
+                            src="/media/icons/duotune/arrows/arr012.svg"
                         />
                     </span>
                     Connected
@@ -83,7 +83,7 @@
                 <a v-else href="#" class="btn btn-sm btn-light">
                     <span class="svg-icon svg-icon-3">
                         <inline-svg
-                            src="media/icons/duotune/arrows/arr075.svg"
+                            src="/media/icons/duotune/arrows/arr075.svg"
                         />
                     </span>
                     Connect
