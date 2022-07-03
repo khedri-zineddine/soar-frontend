@@ -35,7 +35,7 @@
     <!--begin::Row-->
     <div class="row gy-5 g-xl-10">
         <!--begin::Col-->
-        <div class="col-xxl-6">
+        <div class="col-xxl-12">
             <ListsWidget5 widget-classes="card-xl-stretch mb-xl-10" />
         </div>
         <!--end::Col-->
@@ -45,7 +45,6 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted } from "vue";
-import LayoutService from "@/core/services/LayoutService";
 import MixedWidget12 from "@/components/widgets/mixed/Widget12.vue";
 import MixedWidget13 from "@/components/widgets/mixed/Widget13.vue";
 import MixedWidget14 from "@/components/widgets/mixed/Widget14.vue";
@@ -63,15 +62,6 @@ export default defineComponent({
     setup() {
         onMounted(() => {
             setCurrentPageTitle("Dashboard");
-            if (!localStorage.getItem("config")) {
-                LayoutService.enableSidebar();
-            }
-        });
-
-        onUnmounted(() => {
-            if (!localStorage.getItem("config")) {
-                LayoutService.disableSidebar();
-            }
         });
     },
 });

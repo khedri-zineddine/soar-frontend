@@ -6,7 +6,6 @@ import JwtService from "@/core/services/JwtService";
 const Layout = () => import("@/layout/Layout.vue");
 const Dashboard = () => import("@/views/Dashboard.vue");
 const Rapport = () => import("@/views/crafted/pages/profile/Overview.vue");
-const Chat = () => import("@/views/apps/chat/Chat.vue");
 const AuthLayout = () => import("@/components/page-layouts/Auth.vue");
 const LoginPage = () =>
     import("@/views/crafted/authentication/basic-flow/SignIn.vue");
@@ -30,11 +29,6 @@ const routes: Array<RouteRecordRaw> = [
                 path: "/rapport",
                 name: "Rapports",
                 component: Rapport,
-            },
-            {
-                path: "/apps/chat/private-chat",
-                name: "apps-private-chat",
-                component: Chat,
             },
         ],
     },
