@@ -1,19 +1,20 @@
 import { Actions, Mutations } from "@/store/enums/EventEnums";
 import { Module, Action, Mutation, VuexModule } from "vuex-module-decorators";
 import ApiService from "@/core/services/ApiService";
-import axios from "axios";
 const API_URL = APP_ENV.SOAR_API;
+type EventType = {
+    title: string;
+    status: string;
+    time: string;
+    typeVulnerability: string;
+    img: string;
+    details: object;
+    type: string;
+};
 export interface EventInfo {
     otherRequest: boolean;
-    eventData: {
-        title: string;
-        status: string;
-        time: string;
-        typeVulnerability: string;
-        img: string;
-        details: object;
-        type: string;
-    }[];
+    eventData: { [x: string]: EventType[] };
+    notifications: EventType[];
     errors: unknown;
     phishingEmails: {
         title: string;
@@ -26,7 +27,7 @@ export interface EventInfo {
 }
 @Module
 export default class EventModule extends VuexModule implements EventInfo {
-    eventData = [];
+    eventData = {};
     errors = {};
     phishingEmails = {
         title: "",
@@ -36,14 +37,20 @@ export default class EventModule extends VuexModule implements EventInfo {
         img: "email.png",
         details: {},
     };
+    notifications = [];
     otherRequest = false;
     get currentEvents() {
         return this.eventData;
     }
 
     @Mutation
-    [Mutations.SET_EVENTS](data) {
-        this.eventData = data?.data;
+    [Mutations.SET_EVENTS](payload) {
+        const { eventKey, content } = payload;
+        const eventData = this.eventData;
+        this.eventData = {
+            ...eventData,
+            [eventKey]: content,
+        };
     }
 
     @Mutation
@@ -60,6 +67,26 @@ export default class EventModule extends VuexModule implements EventInfo {
     @Mutation
     [Mutations.SET_SEND_RESPONSE](data) {
         this.otherRequest = data;
+    }
+    @Mutation
+    [Mutations.ADD_NOTIFICATION_ITEM](item) {
+        const notifications = this.notifications;
+        this.notifications = [item, ...notifications];
+    }
+
+    @Action
+    [Actions.GET_ATTACK_EVENTS](attack: string) {
+        return ApiService.query(`${API_URL}/events/${attack}`, {})
+            .then(({ data }) => {
+                if (!data) return;
+                this.context.commit(Mutations.SET_EVENTS, {
+                    eventKey: attack,
+                    content: data.content,
+                });
+            })
+            .catch(({ response }) => {
+                this.context.commit(Mutations.SET_ERROR, response.data.errors);
+            });
     }
 
     @Action

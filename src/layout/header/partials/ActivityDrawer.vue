@@ -50,45 +50,21 @@
                     <!--begin::Timeline items-->
                     <div class="timeline">
                         <Item1></Item1>
-                        <Item2></Item2>
-                        <Item3></Item3>
                     </div>
-                    <!--end::Timeline items-->
                 </div>
-                <!--end::Content-->
             </div>
-            <!--end::Body-->
-
-            <!--begin::Footer-->
-            <div class="card-footer py-5 text-center" id="kt_activities_footer">
-                <a href="#" class="btn btn-bg-white text-primary">
-                    Afficher toutes les alertes<span
-                        class="svg-icon svg-icon-3 svg-icon-primary"
-                    >
-                        <inline-svg
-                            src="/media/icons/duotune/arrows/arr064.svg"
-                        />
-                    </span>
-                </a>
-            </div>
-            <!--end::Footer-->
         </div>
     </div>
-    <!--end::Activities drawer-->
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import Item1 from "@/layout/header/partials/activity-timeline/Item1.vue";
-import Item2 from "@/layout/header/partials/activity-timeline/Item2.vue";
-import Item3 from "@/layout/header/partials/activity-timeline/Item3.vue";
 
 export default defineComponent({
     name: "kt-activity-drawer",
     components: {
         Item1,
-        Item2,
-        Item3,
     },
 });
 </script>

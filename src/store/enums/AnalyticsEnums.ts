@@ -1,0 +1,17 @@
+enum Actions {
+    GET_ALERTS_STATE = "getAlertsState",
+    GET_RESPONSES_STATE = "getResponsesState",
+    GET_LAST_EVENTS = "getLastEvents",
+}
+enum Mutations {
+    SET_ALERTS_LOADED = "SET_ALERTS_LOADED",
+    SET_ALERTS_STATES = "SET_ALERTS_STATES",
+
+    SET_RESPONSES_LOADED = "SET_RESPONSES_LOADED",
+    SET_RESPONSES_STATES = "SET_RESPONSES_STATES",
+
+    SET_LAST_EVENTS = "SET_LAST_EVENTS",
+    SET_EVENTS_LOADED = "SET_EVENTS_LOADED",
+}
+
+export { Actions, Mutations };

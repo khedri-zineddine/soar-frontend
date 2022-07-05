@@ -57,12 +57,9 @@
         />
     </div>
     <div class="card" :class="widgetClasses">
-        <!--begin::Header-->
         <div class="mt-7">
             <div>
-                <!--begin::Timeline heading-->
                 <div class="pe-3 mb-5">
-                    <!--begin::Title-->
                     <div class="fs-5 fw-bold mb-2">
                         <div
                             class="timeline-icon symbol symbol-circle symbol-40px me-4"
@@ -78,32 +75,7 @@
                         Nouvelles alertes de sécurité pour vous au sein de votre
                         infrastructure :
                     </div>
-                    <!--end::Title-->
-
-                    <!--begin::Description-->
-                    <!--<div class="d-flex align-items-center mt-1 fs-6">
-                        
-                        <div class="text-muted me-2 fs-7">
-                            Dernière alerte à
-                            {{
-                                new Date(timelastEvent).toLocaleDateString(
-                                    "en-US",
-                                    {
-                                        month: "short",
-                                        day: "2-digit",
-                                        hour: "2-digit",
-                                        minute: "2-digit",
-                                        second: "2-digit",
-                                    }
-                                )
-                            }}
-                        </div>
-                    </div>-->
-                    <!--end::Description-->
                 </div>
-                <!--end::Timeline heading-->
-
-                <!--begin::Timeline details-->
                 <div class="overflow-auto pb-5">
                     <EventItem
                         v-for="(item, idx) in realTimeEvents"
@@ -129,14 +101,10 @@
                         type="db"
                         :index="idx"
                     ></EventItem>
-                    <!--end::Record-->
                 </div>
-                <!--end::Timeline details-->
             </div>
         </div>
-        <!--end: Card Body-->
     </div>
-    <!--end: List Widget 5-->
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -219,20 +187,10 @@ export default defineComponent({
             },
         }),
     },
-    updated: function () {
-        /*let rEvent = this.realTimeEvents.at(-1);
-        let dEvent = this.phishingEmails.at(-1);
-        if (new Date(rEvent).getTime() >= new Date(dEvent).getTime())
-            this.timelastEvent = rEvent.time;
-        if (new Date(rEvent).getTime() < new Date(dEvent).getTime())
-            this.timelastEvent = dEvent.time;*/
-        console.log("display and check times  ");
-    },
     methods: {
         onEventReceived(event) {
             console.log("---------- i have received an login alert --------");
             const data = JSON.parse(event.data);
-            //console.log(data, this.realTimeEvents);
             const obj = {
                 title: "Anomalie d'authentification au service SSH",
                 status: "Terminé",
@@ -245,7 +203,6 @@ export default defineComponent({
         },
         handleSSHEvent(event) {
             const data = JSON.parse(event.data);
-            //console.log(data);
             const obj = {
                 title: "Attaque de service SSH par force brute",
                 status: "En Cours",

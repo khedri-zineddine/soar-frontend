@@ -7,6 +7,7 @@ import { defineComponent, onMounted, nextTick } from "vue";
 import { useStore } from "vuex";
 import { initializeComponents } from "@/core/plugins/keenthemes";
 import { Mutations } from "@/store/enums/StoreEnums";
+import { InitEventSources } from "@/store";
 
 export default defineComponent({
     name: "app",
@@ -14,6 +15,7 @@ export default defineComponent({
         const store = useStore();
 
         onMounted(() => {
+            InitEventSources();
             /**
              * this is to override the layout config using saved data from localStorage
              * remove this to use config only from static config (@/core/config/DefaultLayoutConfig.ts)

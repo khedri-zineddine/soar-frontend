@@ -21,8 +21,7 @@ export default async ({ mode }) => {
             },
         },
         server: {
-            port,
-            host,
+            port: 3000,
         },
     });
 };

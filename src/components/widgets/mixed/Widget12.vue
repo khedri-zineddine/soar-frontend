@@ -18,6 +18,7 @@
                 <!--begin::Chart-->
                 <apexchart
                     class="mixed-widget-13-chart"
+                    v-if="alertsLoaded"
                     :options="chartOptions"
                     :series="series"
                     :height="chartHeight"
@@ -30,15 +31,28 @@
             <!--begin::Stats-->
             <div class="pt-5">
                 <!--begin::Number-->
-                <span class="text-dark fw-bolder fs-2x me-2 lh-0"
-                    >153 Alertes</span
-                >
-                <!--end::Number-->
+                <template v-if="alertsLoaded">
+                    <span class="text-dark fw-bolder fs-2x me-2 lh-0"
+                        >{{ countAlerts }} Alertes</span
+                    >
+                    <!--end::Number-->
 
-                <!--begin::Text-->
-                <span class="text-dark fw-bolder fs-6 lh-0"
-                    >- cette semaine</span
-                >
+                    <!--begin::Text-->
+                    <span class="text-dark fw-bolder fs-6 lh-0"
+                        >- dans les 7 derniers jours</span
+                    >
+                </template>
+                <template v-else>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <span class="text-dark fw-bolder fs-2x me-2 lh-0"
+                        >Loading alerts...</span
+                    >
+                </template>
+
                 <!--end::Text-->
             </div>
             <!--end::Stats-->
@@ -49,8 +63,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, computed, onMounted } from "vue";
+import { useStore } from "vuex";
+import { Actions } from "@/store/enums/AnalyticsEnums";
 import { getCSSVariableValue } from "@/assets/ts/_utils";
+import { AnalyticsInfo } from "@/store/modules/AnalyticsModule";
 
 export default defineComponent({
     name: "widget-12",
@@ -59,141 +76,166 @@ export default defineComponent({
         widgetColor: String,
         chartHeight: String,
     },
+
     setup(props) {
+        const store = useStore();
         const labelColor = getCSSVariableValue("--bs-" + "gray-800");
         const strokeColor = getCSSVariableValue("--bs-" + "gray-300");
 
-        const chartOptions = {
-            grid: {
-                show: false,
-                padding: {
-                    top: 0,
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                },
-            },
-            chart: {
-                fontFamily: "inherit",
-                type: "area",
-                height: props.chartHeight,
-                toolbar: {
+        const alertsLoaded = computed<AnalyticsInfo["alertsLoaded"]>(() => {
+            return store.state.AnalyticsModule.alertsLoaded;
+        });
+        const alertsState = computed<AnalyticsInfo["alertsState"]>(() => {
+            return store.state.AnalyticsModule.alertsState;
+        });
+
+        const countAlerts = computed<AnalyticsInfo["alertsState"]["count"]>(
+            () => {
+                return alertsState.value.count;
+            }
+        );
+
+        const chartOptions = computed(() => {
+            return {
+                grid: {
                     show: false,
-                },
-                zoom: {
-                    enabled: false,
-                },
-                sparkline: {
-                    enabled: true,
-                },
-            },
-            plotOptions: {},
-            legend: {
-                show: false,
-            },
-            dataLabels: {
-                enabled: false,
-            },
-            fill: {
-                type: "gradient",
-                gradient: {
-                    opacityFrom: 0.4,
-                    opacityTo: 0,
-                    stops: [20, 120, 120, 120],
-                },
-            },
-            stroke: {
-                curve: "smooth",
-                show: true,
-                width: 3,
-                colors: ["#FFFFFF"],
-            },
-            xaxis: {
-                categories: ["Sam", "Dim", "Lun", "Mar", "Mer", "Jeu", "Ven"],
-                axisBorder: {
-                    show: false,
-                },
-                axisTicks: {
-                    show: false,
-                },
-                labels: {
-                    show: false,
-                    style: {
-                        colors: labelColor,
-                        fontSize: "12px",
+                    padding: {
+                        top: 0,
+                        bottom: 0,
+                        left: 0,
+                        right: 0,
                     },
                 },
-                crosshairs: {
+                chart: {
+                    fontFamily: "inherit",
+                    type: "area",
+                    height: props.chartHeight,
+                    toolbar: {
+                        show: false,
+                    },
+                    zoom: {
+                        enabled: false,
+                    },
+                    sparkline: {
+                        enabled: true,
+                    },
+                },
+                plotOptions: {},
+                legend: {
                     show: false,
-                    position: "front",
-                    stroke: {
-                        color: strokeColor,
-                        width: 1,
-                        dashArray: 3,
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                fill: {
+                    type: "gradient",
+                    gradient: {
+                        opacityFrom: 0.4,
+                        opacityTo: 0,
+                        stops: [20, 120, 120, 120],
+                    },
+                },
+                stroke: {
+                    curve: "smooth",
+                    show: true,
+                    width: 3,
+                    colors: ["#FFFFFF"],
+                },
+                xaxis: {
+                    categories: alertsState.value.labels,
+                    axisBorder: {
+                        show: false,
+                    },
+                    axisTicks: {
+                        show: false,
+                    },
+                    labels: {
+                        show: false,
+                        style: {
+                            colors: labelColor,
+                            fontSize: "12px",
+                        },
+                    },
+                    crosshairs: {
+                        show: false,
+                        position: "front",
+                        stroke: {
+                            color: strokeColor,
+                            width: 1,
+                            dashArray: 3,
+                        },
+                    },
+                    tooltip: {
+                        enabled: false,
+                    },
+                },
+                yaxis: {
+                    min: 0,
+                    max: 60,
+                    labels: {
+                        show: false,
+                        style: {
+                            colors: labelColor,
+                            fontSize: "12px",
+                        },
+                    },
+                },
+                states: {
+                    normal: {
+                        filter: {
+                            type: "none",
+                            value: 0,
+                        },
+                    },
+                    hover: {
+                        filter: {
+                            type: "none",
+                            value: 0,
+                        },
+                    },
+                    active: {
+                        allowMultipleDataPointsSelection: false,
+                        filter: {
+                            type: "none",
+                            value: 0,
+                        },
                     },
                 },
                 tooltip: {
-                    enabled: false,
-                },
-            },
-            yaxis: {
-                min: 0,
-                max: 60,
-                labels: {
-                    show: false,
                     style: {
-                        colors: labelColor,
                         fontSize: "12px",
                     },
-                },
-            },
-            states: {
-                normal: {
-                    filter: {
-                        type: "none",
-                        value: 0,
+                    y: {
+                        formatter: function (val) {
+                            return val + " incidents";
+                        },
                     },
                 },
-                hover: {
-                    filter: {
-                        type: "none",
-                        value: 0,
-                    },
+                colors: ["#ffffff"],
+                markers: {
+                    colors: [labelColor],
+                    strokeColor: [strokeColor],
+                    strokeWidth: 3,
                 },
-                active: {
-                    allowMultipleDataPointsSelection: false,
-                    filter: {
-                        type: "none",
-                        value: 0,
-                    },
-                },
-            },
-            tooltip: {
-                style: {
-                    fontSize: "12px",
-                },
-                y: {
-                    formatter: function (val) {
-                        return val + " incidents";
-                    },
-                },
-            },
-            colors: ["#ffffff"],
-            markers: {
-                colors: [labelColor],
-                strokeColor: [strokeColor],
-                strokeWidth: 3,
-            },
-        };
+            };
+        });
 
-        const series = [
-            {
-                name: "Alertes",
-                data: [15, 25, 15, 35, 20, 30, 13],
-            },
-        ];
+        const series = computed(() => {
+            return [
+                {
+                    name: "Alertes",
+                    data: alertsState.value.values,
+                },
+            ];
+        });
+
+        onMounted(() => {
+            if (!alertsLoaded.value) store.dispatch(Actions.GET_ALERTS_STATE);
+        });
 
         return {
+            alertsLoaded,
+            countAlerts,
             series,
             chartOptions,
         };
