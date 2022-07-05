@@ -6,7 +6,7 @@
         "dev": "vite --mode dev",
         "serve": "vite --mode prod",
         "build": "vite build --mode prod",
-        "preview": "vite preview",
+        "preview": "vite preview --port 8001",
         "lint": "vue-cli-service lint",
         "heroku:serve": "node server.js"
     },
