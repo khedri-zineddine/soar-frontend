@@ -5,9 +5,9 @@
 <script lang="ts">
 import { defineComponent, onMounted, nextTick } from "vue";
 import { useStore } from "vuex";
+import { InitEventSources } from "@/store";
 import { initializeComponents } from "@/core/plugins/keenthemes";
 import { Mutations } from "@/store/enums/StoreEnums";
-import { InitEventSources } from "@/store";
 
 export default defineComponent({
     name: "app",
