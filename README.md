@@ -1,29 +1,27 @@
-# demo3
+# 🛡️ SOAR Dashboard Frontend ( Internship )
 
-## Project setup
+A Security Orchestration, Automation and Response (SOAR) dashboard built with Vue 3. Enables security teams to monitor, analyze, and respond to security threats. 
 
+
+## 🛠️ Tech Stack
+
+- Vue 3 + Composition API
+- TypeScript
+- Vite
+- WebSocket for real-time updates
+
+## 🚀 Quick Start
+
+```bash
+# Clone repository
+git clone https://github.com/khedri-zineddine/soar-frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
